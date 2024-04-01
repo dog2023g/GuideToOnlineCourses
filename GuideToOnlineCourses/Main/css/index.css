@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  height: 100%;
+  line-height: 17px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  border-bottom: 1px solid gray;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.navbar-nav li {
+  padding: 0 3px;
+}
+
+.wrapper__2 {
+  margin: 0;
+}
+
+.container_2 {
+  background-color: rgb(249, 249, 249);
+}
+
+.container_1 {
+  max-width: 50%;
+  margin: 0 25%;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.greeting_image {
+  max-width: 30%;
+}
+
+.greeting_text {
+  max-width: 60%;
+  text-align: justify;
+}
+
+.image {
+  width: 100%;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.h1_lessons {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  flex: 1 1 auto;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.card {
+  margin: 30px 7px;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+footer {
+  min-height: 200px;
+  background-color: rgb(50, 50, 50);
+}
+
+.h1_footer {
+  padding: 15px 0 0 0;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.h2_footer {
+  padding: 10px 0 0 5%;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.ul_footer {
+  padding: 0px 5px 10px 7%;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ul_footer li {
+  padding: 0 0 7px 0;
+}
+
+.footer_a {
+  color: white;
+}
+
+.footer_a:hover {
+  color: white;
+}
+
+.footer_a:active {
+  color: white;
+}
+
+.footer_a:visited {
+  color: white;
+}
+
+@media (max-width: 12450px) {
+  .container_1 {
+    max-width: 50%;
+    margin: 0 25%;
+  }
+}
+@media (max-width: 1350px) {
+  .container_1 {
+    max-width: 75%;
+    margin: 0 10%;
+  }
+}
+@media (max-width: 991px) {
+  .container_1 {
+    max-width: 100%;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 750px) {
+  .container_1 {
+    max-width: 100%;
+    margin: 0 3%;
+  }
+  .greeting {
+    flex-direction: column;
+    align-items: center;
+  }
+  .greeting_text {
+    max-width: 80%;
+  }
+  .card {
+    justify-content: center;
+  }
+}
+@media (max-width: 635px) {
+  .container_1 {
+    max-width: 100%;
+    margin: 0 3%;
+  }
+  .greeting_text {
+    max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .container_1 {
+    max-width: 100%;
+    margin: 0 3%;
+  }
+}
+@media (max-width: 446px) {
+  .card {
+    margin: 15px 2px;
+    max-width: 150px;
+  }
+}/*# sourceMappingURL=index.css.map */
