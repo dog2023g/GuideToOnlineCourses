@@ -37,7 +37,7 @@
                             </a>
                             <span id="dropdown-menu">
                             <ul class="dropdown-menu"></span>
-                                <li><input type="button"  class="dropdown-item" onclick="location.href =window.location.pathname+'#ru'; Translate();" value="Русский"></li>
+                                <li><input type="button"  class="dropdown-item" onclick="location.href =window.location.pathname; Translate();" value="Русский"></li>
                                 <li><input type="button" class="dropdown-item" onclick="location.href =window.location.pathname+'#en'; Translate();" value="English"></li>
                                 <li><input type="button" class="dropdown-item" onclick="location.href =window.location.pathname+'#ch'; Translate();" value="中國人"></li>
                                 <li><input type="button" class="dropdown-item" onclick="location.href =window.location.pathname+'#ar'; Translate();" value="عربي"></li>
@@ -69,7 +69,7 @@
 <span> Предлагаем начать как можно скорее! </span>
                           </span>
                             <br> <br>
-                            <span id="link_1_lesson_gr">
+                            <span id="to_lesson_1_main">
                             <button type="button" class="btn btn-success "> <a class="footer_a" href="">Открыть руководство!</a></button>
                             </span>
                         </div>
@@ -80,7 +80,7 @@
                 <div class="container_2">
                     <div class="container_1"">
                         <br>
-                        <h1 class="h1_lessons">Уроки и курсы</h1>
+                        <h1 class="h1_lessons">Уроки и курсы <span id="to_lessons"></span></h1>
                         <br>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div id="link_1_lesson" class="card text-center mb-3" style="width: 18rem;">
@@ -137,9 +137,9 @@
                     <br><br>
                 </div>
             </main>
-            <footer>
-                <h1 class="h1_footer" id="">Полезные ссылки</h1>
-                <h2 class="h2_footer" id="">Учебные платформы:</h2>
+            <footer id="footer">
+                <h1 class="h1_footer" id="h1_footer">Полезные ссылки</h1>
+                <h2 class="h2_footer" id="h2_footer">Учебные платформы:</h2>
                 <ul class="ul_footer">
                     <li id="link_openedu"><a href="#" class="footer_a">"Открытое образование"</a></li>
                     <li id="link_elearn"><a href="#" class="footer_a">"Портал электронного обучения"</a></li>
