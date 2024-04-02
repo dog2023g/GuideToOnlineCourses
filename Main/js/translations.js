@@ -1,5 +1,5 @@
 var toMain='https://dog2023g.github.io/GuideToOnlineCourses/Main/';
-var lessons='#https://dog2023g.github.io/GuideToOnlineCourses/Main/';
+var lessons='https://dog2023g.github.io/GuideToOnlineCourses/Main/';
 var aboutUs='#footer';
 var openedu='https://openedu.ru/?ysclid=luha0dkctv671818426';
 var elern='https://elearn.urfu.ru/';
@@ -14,13 +14,13 @@ var lesson_6='https://dog2023g.github.io/GuideToOnlineCourses/Lesson_6/';
 var lesson_7='https://dog2023g.github.io/GuideToOnlineCourses/Lesson_7/';
 const language={
     "link_our_name":{ //навигационная панель
-        "ru": '<a class="navbar-brand" href="'+toMain+'#ru"><img src="img/seal_12890965.png" alt="&nbspТюлени Свободы" width="50" height="50"></a>',
+        "ru": '<a class="navbar-brand" href="'+toMain+'"><img src="img/seal_12890965.png" alt="&nbspТюлени Свободы" width="50" height="50"></a>',
         "en": '<a class="navbar-brand" href="'+toMain+'#en"><img src="img/seal_12890965.png" alt="&nbspRadio Seals" width="50" height="50"></a>',
         "ch": '<a class="navbar-brand" href="'+toMain+'#ch"><img src="img/seal_12890965.png" alt="&nbsp自由印章" width="50" height="50"></a>',
         "ar": '<a class="navbar-brand" href="'+toMain+'#ar"><img src="img/seal_12890965.png" alt="&nbspأختام الحرية" width="50" height="50"></a>'
     },
     "link_name":{ //навигационная панель
-        "ru": '<a class="nav-link active" aria-current="page" href="'+toMain+'#ru">Главная</a>',
+        "ru": '<a class="nav-link active" aria-current="page" href="'+toMain+'">Главная</a>',
         "en": '<a class="nav-link active" aria-current="page" href="'+toMain+'#en">Main</a>',
         "ch": '<a class="nav-link active" aria-current="page" href="'+toMain+'#ch">首頁</a>',
         "ar": '<a class="nav-link active" aria-current="page" href="'+toMain+'#ar">بيت</a>'
