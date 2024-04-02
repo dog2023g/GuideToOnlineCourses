@@ -181,4 +181,10 @@ const language={
         "ch": '<div class="card-body"><h5 class="card-title">關於重考</h5><p class="card-text">這是一個簡短的描述</p><a href="'+lesson_7+'#ch" class="btn btn-success">去！</a></div>',
         "ar": '<div class="card-body"><h5 class="card-title">بخصوص إعادة الامتحانات</h5><p class="card-text">وهنا وصف قصير</p><a href="'+lesson_7+'#ar" class="btn btn-success">يذهب!</a></div>',
     },
+    "h1_lessons":{ 
+        "ru": 'Уроки и курсы <span id="to_lessons"></span>',
+        "en": 'Lessons and courses <span id="to_lessons"></span>',
+        "ch": '課程和課程 <span id="to_lessons"></span>：',
+        "ar": 'الدروس والدورات <span id="to_lessons"></span>',
+    },
 };
