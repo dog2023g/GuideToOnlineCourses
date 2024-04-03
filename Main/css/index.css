@@ -259,7 +259,19 @@ footer {
 @media (max-width: 446px) {
   .card {
     margin: 15px 2px;
-    max-width: 150px;
+    max-width: 170px;
+  }
+}
+@media (max-width: 380px) {
+  .card {
+    margin: 15px 1px;
+    max-width: 40%;
+  }
+}
+@media (max-width: 330px) {
+  .card {
+    margin: 15px 2px;
+    max-width: 140px;
   }
 }
 #button_translate {
@@ -297,5 +309,15 @@ footer {
   }
   100% {
     opacity: 100%;
+  }
+}
+@media (max-width: 768px) {
+  @keyframes ani {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 100%;
+    }
   }
 }/*# sourceMappingURL=index.css.map */
