@@ -32,14 +32,14 @@ const language={
         "ar": '<a class="nav-link" href="'+lessons+'#ar">دروس</a>'
     },
     "link_about_us":{ //навигационная панель
-        "ru": '<a class="nav-link" href="'+aboutUs+'">О нас</a>',
-        "en": '<a class="nav-link" href="'+aboutUs+'">About us</a>',
-        "ch": '<a class="nav-link" href="'+aboutUs+'">關於我們</a>',
-        "ar": '<a class="nav-link" href="'+aboutUs+'">معلومات عنا</a>'
+        "ru": '<a onclick="ForFooter()" class="nav-link" href="'+aboutUs+'">О нас</a>',
+        "en": '<a onclick="ForFooter(`#en`)" class="nav-link" href="'+aboutUs+'">About us</a>',
+        "ch": '<a onclick="ForFooter(`#ch`)" class="nav-link" href="'+aboutUs+'">關於我們</a>',
+        "ar": '<a onclick="ForFooter(`#ar`)" class="nav-link" href="'+aboutUs+'">معلومات عنا</a>'
     },
     "search":{ //навигационная панель
         "ru": '<input class="form-control me-2" type="search" placeholder="Например: Exam2" aria-label="Search"><button class="btn btn-outline-success" type="submit">Найти</button>',
-        "en": '<input class="form-control me-2" type="search" placeholder="For example: Exam2" aria-label="Search"><button class="btn btn-outline-success" type="submit">Find</button>',
+        "en": '',
         "ch": '',
         "ar": ''
     },
