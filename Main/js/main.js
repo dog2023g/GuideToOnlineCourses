@@ -1,4 +1,4 @@
-async function main(){
+function main(){
     FlashingInscription();
     Translate();
 }
@@ -32,6 +32,15 @@ function Translate(){
             console.log("Ошибка: элемент '"+element+"', объявленный в массиве с переводами, не существует на странице");
             continue
         }
+    }
+}
+async function ForFooter(a){
+    await new Promise(r => setTimeout(r, 100));
+    if (a==undefined){
+        history.replaceState("", "", "index.html");
+    }
+    else{
+        history.replaceState("", "", "index.html"+a);
     }
 }
 main();
