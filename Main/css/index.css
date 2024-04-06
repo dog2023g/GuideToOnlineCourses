@@ -276,8 +276,8 @@ footer {
 }
 #button_translate {
   animation-name: ani;
-  animation-duration: 12s;
   animation-delay: 0s;
+  animation-duration: 12s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
