@@ -274,6 +274,7 @@ footer {
     max-width: 140px;
   }
 }
+@media (max-width: 10000px) {
 #button_translate {
   animation-name: ani;
   animation-duration: 12s;
@@ -281,14 +282,11 @@ footer {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+}
 
 @media (max-width: 768px) {
   #button_translate {
-    animation-name: ani2;
-    animation-duration: 12s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    animation: none;
   }
 }
 @keyframes ani {
