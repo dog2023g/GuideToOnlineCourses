@@ -1,6 +1,18 @@
 function main(){
+    pageGoToId();
     FlashingInscription();
     Translate();
+}
+function pageGoToId(){
+    document.addEventListener('DOMContentLoaded', function() {
+        const hash = window.location.hash;
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
 }
 async function FlashingInscription(){
     var button_translate = document.getElementById("button_translate");
@@ -13,11 +25,37 @@ async function FlashingInscription(){
     await new Promise(r => setTimeout(r, 3000));
     button_translate.innerHTML="Перевод";
 }
+
+function getQueryParameterValue(key) {
+    const queryString = window.location.href.split('?')[1];
+    if (!queryString) {
+        return null;
+    }
+
+    const urlParams = new URLSearchParams(queryString);
+    return urlParams.get(key);
+}
+function updateQueryParameter(key, value) {
+    const url = window.location.href;
+    const urlObj = new URL(url);
+    const params = new URLSearchParams(urlObj.search);
+
+    if (!params.has(key)) {
+        params.append(key, value);
+    } else {
+        params.set(key, value);
+    }
+
+    urlObj.search = params.toString()+"&";
+
+    window.history.replaceState({}, '',urlObj.toString());
+    pageGoToId();
+}
 function Translate(){
-    let inf_language = window.location.hash;
-    inf_language = inf_language.substr(1);
+    let inf_language = getQueryParameterValue("lang");
     if (!(inf_language=="en" || inf_language=="ch" || inf_language=="ar")){
-        inf_language="ru";
+        inf_language='ru';
+        updateQueryParameter('lang', 'ru')
     }
     for (let element in language){
         let path = document.getElementById(element);
@@ -33,14 +71,6 @@ function Translate(){
             continue
         }
     }
-}
-async function ForFooter(a){
-    await new Promise(r => setTimeout(r, 100));
-    if (a==undefined){
-        history.replaceState("", "", "index.html");
-    }
-    else{
-        history.replaceState("", "", "index.html"+a);
-    }
+    pageGoToId();
 }
 main();
