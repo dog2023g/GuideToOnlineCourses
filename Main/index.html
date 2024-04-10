@@ -37,10 +37,10 @@
                             </a>
                             <span id="dropdown-menu">
                             <ul class="dropdown-menu"></span>
-                                <li><a type="button"  class="dropdown-item" onclick='history.replaceState("", "", "index.html"); Translate();' >Русский</a>
-                                <li><a type="button" class="dropdown-item" onclick="location.href =window.location.pathname+'#en'; Translate();" >English</a>
-                                <li><a type="button" class="dropdown-item" onclick="location.href =window.location.pathname+'#ch'; Translate();" >中國人</a>
-                                <li><a type="button" class="dropdown-item" onclick="location.href =window.location.pathname+'#ar'; Translate();"> عربي</a>
+                                <li><a type="button"  class="dropdown-item" onclick="updateQueryParameter('lang','ru'); Translate();" >Русский</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','en'); Translate();" >English</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ch'); Translate();" >中國人</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ar'); Translate();"> عربي</a>
                             </ul>
                           </li>
                         </ul>
