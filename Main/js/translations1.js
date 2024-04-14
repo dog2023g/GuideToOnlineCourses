@@ -191,10 +191,10 @@ const language={
         "ar": 'لقد تغير تشكيل الفريق، وأصبح يضم حاليا:',
     },
     "footer_about_us_ul":{ //футер
-        "ru": '<li>Глеб Шилов - тимлид и frontend разработчик</li><li>Кирилл Серебряков - аналитик</li><li>Вероника Гайнулаева - копирайтер и переводчик</li><li>Александр Севрюк - дизайнер</li><li> Дмитрий Китаев - frontend и backend разработчик</li>',
-        "en": '<li>Gleb Shilov - team lead and frontend developer</li><li>Kirill Serebryakov - analyst</li><li>Veronica Gainuleva - copywriter and translator</li><li>Alexander Sevryuk  - designer</li><li> Dmitriy Kitaev - frontend and backend developer</li>',
-        "ch": '<li>Gleb Shilov - 團隊領導與前端開發人員</li><li>Kirill Serebryakov - 分析師</li><li>Veronica Gainuleva - 文案和翻譯</li><li>Alexander Sevryuk  - 設計師</li><li> Dmitriy Kitaev  - 前端和後端開發人員</li>',
-        "ar": '<li>Gleb Shilov - قائد الفريق ومطور الواجهة الأمامية</li><li>Kirill Serebryakov - المحلل</li><li>Veronica Gainuleva - كاتب ومترجم</li><li>Alexander Sevryuk  - مصمم</li><li> Dmitriy Kitaev - مطور الواجهة الأمامية والخلفية</li>',
+        "ru": '<li> - тимлид и frontend разработчик</li><li> - аналитик</li><li> - копирайтер и переводчик</li><li> - дизайнер</li><li>  - frontend и backend разработчик</li>',
+        "en": '<li> - team lead and frontend developer</li><li> - analyst</li><li> - copywriter and translator</li><li>  - designer</li><li>  - frontend and backend developer</li>',
+        "ch": '<li> - 團隊領導與前端開發人員</li><li>- 分析師</li><li> - 文案和翻譯</li><li>  - 設計師</li><li>   - 前端和後端開發人員</li>',
+        "ar": '<li> - قائد الفريق ومطور الواجهة الأمامية</li><li> - المحلل</li><li> - كاتب ومترجم</li><li>  - مصمم</li><li>  - مطور الواجهة الأمامية والخلفية</li>',
     },
     "to_lesson_1":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К первому уроку!</a></button>',
