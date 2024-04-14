@@ -5,6 +5,9 @@ function main(){
 }
 function InitializeTests(lang){
     let path_tests = document.getElementById('lesson_tests');
+    if (path_tests==null){
+        return;
+    }
     var tests = tests_any_lang[lang];
     path_tests.innerHTML='';
     for (i=0; i<tests.length; i++){
