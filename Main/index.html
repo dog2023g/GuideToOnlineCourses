@@ -61,16 +61,16 @@
                         </div>
                         <div class="greeting_text">
                           <span id="greeting_text">
-                            <h1>Учиться не сложно!</h1>
-                            Привет! Поздравляем с поступлением в Уральский федеральный университет! <br> Во время своего 
-обучения ты, скорее всего, столкнёшься с онлайн-курсами. Мы же постараемся помочь тебе с 
-этим делом, расскажем про основные моменты и нюансы. <br> Всю информацию мы разделили на 7 
-уроков, ознакомившись с которыми ты будешь полностью готов к успешному прохождению. <br><br>
-<span> Предлагаем начать как можно скорее! </span>
+                            <h1 class="main_page__h1_lessons">Учиться не сложно!</h1>
+                           <p> Привет! Поздравляем с поступлением в Уральский федеральный университет! </p>
+                           <p> Во время своего обучения ты, скорее всего, столкнёшься с онлайн-курсами. Мы же постараемся помочь тебе с 
+этим делом, расскажем про основные моменты и нюансы. </p>
+                            <p>   Всю информацию мы разделили на 7 уроков, ознакомившись с которыми ты будешь полностью готов к успешному прохождению.</p>
+<p> Предлагаем начать как можно скорее! </p>
                           </span>
-                            <br> <br>
-                            <span id="to_lesson_1_main">
-                            <button type="button" class="btn btn-success "> <a class="footer_a" href="">Открыть руководство!</a></button>
+                            <br>
+                            <span id="main_page__to_lesson_1_main">
+                            <button type="button" class="btn btn-success "> <a class="white_link" href="">Открыть руководство!</a></button>
                             </span>
                         </div>
                     </div>
@@ -80,52 +80,51 @@
                 <div class="container_2">
                     <div class="container_1"">
                         <br>
-                        <h1 class="h1_lessons" id="h1_lessons">Уроки и курсы <span id="to_lessons"></span></h1>
-                        <br>
+                        <h1 class="main_page__h1_lessons" id="card_main_page__h1_lessons">Уроки и курсы <span id="to_lessons"></span></h1>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div id="link_1_lesson" class="card text-center mb-3" style="width: 18rem;">
+                            <div id="card_link_1_lesson" class="card text-center mb-3" style="width: 18rem;">
                                 <div class="card-body">
                                   <h5 class="card-title">Регистрация почты Урфу</h5>
                                   <p class="card-text">Здесь небольшое описание</p>
                                   <a href="#" class="btn btn-success">Перейти!</a>
                                 </div>
                             </div>
-                            <div id="link_2_lesson" class="card text-center mb-3" style="width: 18rem;">
+                            <div id="card_link_2_lesson" class="card text-center mb-3" style="width: 18rem;">
                                 <div class="card-body">
                                   <h5 class="card-title">Регистрация на платформах</h5>
                                   <p class="card-text">Здесь небольшое описание</p>
                                   <a href="#" class="btn btn-success">Перейти!</a>
                                 </div>
                             </div>
-                            <div id="link_3_lesson" class="card text-center mb-3" style="width: 18rem;">
+                            <div id="card_link_3_lesson" class="card text-center mb-3" style="width: 18rem;">
                                 <div class="card-body">
                                   <h5 class="card-title">Регистрация на курс</h5>
                                   <p class="card-text">Здесь небольшое описание</p>
                                   <a href="#" class="btn btn-success">Перейти!</a>
                                 </div>
                             </div>
-                            <div id="link_4_lesson" class="card text-center mb-3" style="width: 18rem;">
+                            <div id="card_link_4_lesson" class="card text-center mb-3" style="width: 18rem;">
                                 <div class="card-body">
                                   <h5 class="card-title">Фишки онлайн-курсов</h5>
                                   <p class="card-text">Здесь небольшое описание</p>
                                   <a href="#" class="btn btn-success">Перейти!</a>
                                 </div>
                             </div>
-                            <div id="link_5_lesson" class="card text-center mb-3" style="width: 18rem;">
+                            <div id="card_link_5_lesson" class="card text-center mb-3" style="width: 18rem;">
                                 <div class="card-body">
                                   <h5 class="card-title">О прокторинге</h5>
                                   <p class="card-text">Здесь небольшое описание</p>
                                   <a href="#" class="btn btn-success">Перейти!</a>
                                 </div>
                             </div>
-                            <div id="link_6_lesson" class="card text-center mb-3" style="width: 18rem;">
+                            <div id="card_link_6_lesson" class="card text-center mb-3" style="width: 18rem;">
                                 <div class="card-body">
                                   <h5 class="card-title">Перевод баллов у различных институтов</h5>
                                   <p class="card-text">Здесь небольшое описание</p>
                                   <a href="#" class="btn btn-success">Перейти!</a>
                                 </div>
                             </div>
-                            <div id="link_7_lesson" class="card text-center mb-3" style="width: 18rem;">
+                            <div id="card_link_7_lesson" class="card text-center mb-3" style="width: 18rem;">
                                 <div class="card-body">
                                   <h5 class="card-title">Про пересдачи</h5>
                                   <p class="card-text">Здесь небольшое описание</p>
@@ -139,18 +138,34 @@
             </main>
             <footer id="footer">
                 <h1 class="h1_footer" id="h1_footer">Полезные ссылки</h1>
-                <h2 class="h2_footer" id="h2_footer">Учебные платформы:</h2>
+                <div class="footer_container">
+                  <div class="footer_links1">
+                    <h2 class="h2_footer" id="h2_footer">Учебные платформы:</h2>
                 <ul class="ul_footer">
-                    <li id="link_openedu"><a href="#" class="footer_a">"Открытое образование"</a></li>
-                    <li id="link_elearn"><a href="#" class="footer_a">"Портал электронного обучения"</a></li>
-                    <li id="link_exam1"><a href="#" class="footer_a">"Центр независимой оценки результатов обучения"</a></li>
-                    <li id="link_exam2"><a href="#" class="footer_a">"Exam2"</a></li>
+                    <li id="link_openedu"><a href="#" class="white_link">"Открытое образование"</a></li>
+                    <li id="link_elearn"><a href="#" class="white_link">"Портал электронного обучения"</a></li>
+                    <li id="link_exam1"><a href="#" class="white_link">"Центр независимой оценки результатов обучения"</a></li>
+                    <li id="link_exam2"><a href="#" class="white_link">"Exam2"</a></li>
                 </ul>
                 <h2 class="h2_footer" id="footer_images">Изображения:</h2>
                 <ul class="ul_footer">
-                    <li><a class="footer_a" href="https://ru.freepik.com/free-vector/desktop-computer-vconcept-illustration_32318401.htm">Изображение от storyset</a> на Freepik</li>
-                    <li><a class="footer_a" href="https://ru.freepik.com/icon/seal_12890965#fromView=search&page=2&position=33&uuid=9ea3ba18-376e-49e7-aee3-43f12ff6f162">Источник иконки: kerismaker</a></li>
-                </ul>
+                    <li><a class="white_link" href="https://ru.freepik.com/free-vector/desktop-computer-vconcept-illustration_32318401.htm">Изображение от storyset</a> на Freepik</li>
+                    <li><a class="white_link" href="https://ru.freepik.com/icon/seal_12890965#fromView=search&page=2&position=33&uuid=9ea3ba18-376e-49e7-aee3-43f12ff6f162">Источник иконки: kerismaker</a></li>
+                  </div>
+                  <div class="footer_links2">
+                    <h2 class="h2_footer" id="footer_about_us">О нас</h2>
+                    <p class="footer_p" id="footer_about_us_p1">Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов</p>
+                    <p class="footer_p footer_p_last" id="footer_about_us_p2">Состав команды изменялся, и на данный момент в неё входят:</p>
+                  <ul class="ul_footer" id="footer_about_us_ul">
+                    <li> - тимлид и frontend разработчик</li>
+                    <li> - аналитик</li>
+                    <li> - копирайтер и переводчик</li>
+                    <li> - дизайнер</li>
+                    <li> - frontend и backend разработчик</li>
+                  </ul>
+                  </div>
+                  </div>
+              </div>
             </footer>
         </div>
         <script src="js/translations.js"></script>
