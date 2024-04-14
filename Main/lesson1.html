@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Руководство по онлайн-курсам</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav class="navbar navbar-expand-md bg-body-tertiary">
+                    <div class="container-fluid">
+                      <span  id="link_our_name">
+                      <a class="navbar-brand" href="#">
+                        <img src="img/seal_12890965.png" alt="&nbspТюлени Свободы" width="50" height="50">
+                      </a>
+                    </span>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item" id="link_name">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                          </li>
+                          <li class="nav-item" id="link_lessons">
+                            <a class="nav-link" href="#">Уроки</a>
+                          </li>
+                          <li class="nav-item" id="link_about_us">
+                            <a class="nav-link" href="#">О нас</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span id="button_translate">Перевод</span>
+                            </a>
+                            <span id="dropdown-menu">
+                            <ul class="dropdown-menu"></span>
+                                <li><a type="button"  class="dropdown-item" onclick="updateQueryParameter('lang','ru'); Translate();" >Русский</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','en'); Translate();" >English</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ch'); Translate();" >中國人</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ar'); Translate();"> عربي</a>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search" id="search">
+                          <input class="form-control me-2" type="search" placeholder="Например: Exam2" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Найти</button>
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="lesson_page_container">
+                  <h1 class="lesson_page_h1">Как зарегистрировать почту и личный кабинет УРФУ</h1>
+                  <h2 class="lesson_page_h2">План урока</h2>
+                  <ul class="page_lesson_content">
+                    <li> <a class="page_lesson_contents" href="#reg" onclick=" pageGoToId(); reloadPageForContents();"> «Регистрация почты УрФУ» </a></li>
+                    <li><a class="page_lesson_contents" href="#" onclick=" pageGoToId(); reloadPageForContents();">Как завести личный кабинет УрФУ?</a></li>
+                    <li><a class="page_lesson_contents" href="#" onclick=" pageGoToId(); reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>
+                  </ul>
+                  <h2 class="lesson_page_h2" >«Регистрация почты УрФУ»</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur earum illum eaque perspiciatis cumque eum facere numquam in? Quas possimus vero natus excepturi, distinctio molestias animi dolores eos omnis.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem vel porro sequi praesentium commodi modi nisi unde cum voluptates repellendus nostrum quisquam maiores, autem, architecto totam nulla dicta provident?</p>
+                  <h2 class="lesson_page_h2">Пример изображений</h2>
+
+                  <div class="img_lesson_sm" id="reg">
+                    <img src="img/wepik-export-20240405210105HyRC.jpg" alt="">
+                  </div>
+                  <div class="img_lesson">
+                    <img src="img/wepik-export-20240405205553cnIY.jpg" alt="">
+                  </div>
+                  <h2 class="lesson_page_h2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dignissimos illum maxime soluta voluptatum aperiam voluptatem, sequi nesciunt eum ducimus!</p>
+                  <ul class="page_lesson_ul">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, adipisci? </li>
+                    <li>Как завести личный кабинет УрФУ?</li>
+                    <li>Как получить доступ к office.com и своей почте?</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat quod incidunt necessitatibus sed reiciendis eos obcaecati fugiat! Voluptas nobis repellat expedita harum voluptatibus tempora quisquam blanditiis quas itaque nesciunt!</p>
+                  <h2 class="lesson_page_h2">Тест</h2>
+                  <div class="lesson_tests" id="lesson_tests">
+                    <div class="quiz_lesson" id="quiz">
+                      <div class="quiz-header" id="header">
+                          <p>bd 1. Твои данные в поле идентификатора не находятся. Что будешь делать?</p>
+                      </div>
+                      <ul class="quiz-list" id="list"> 
+                        <li>
+                          <label>
+                            <input type="radio" class="answer" name="answer">
+                            <span>Проверю корректность своих данных, а также удостоверюсь, что уже можно начинать
+                              регистрироваться</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" class="answer" name="answer">
+                            <span>Начну истерить, что ничего не получается</span>
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="bu"><button class="btn btn-success" id="submit">Ответить</button></div>
+                    </div>
+                    
+                  </div>
+                  <br>
+                  <h2 id="after_test">Отлично! Теперь пора приступать к следующему этапу!</h2>
+                  <div class="link_to_other_lessons">
+                    <div id="to_lesson_2">
+                      <button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">К второму уроку!</a></button>
+                    </div>
+                    <div id="to_lesson_3">
+                      <button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_3+'?lang=ru&">К третьему уроку!</a></button>
+                    </div>
+                  </div>
+                </div>
+            </main>
+            <footer id="footer">
+              <h1 class="h1_footer" id="h1_footer">Полезные ссылки</h1>
+              <div class="footer_container">
+                <div class="footer_links1">
+                  <h2 class="h2_footer" id="h2_footer">Учебные платформы:</h2>
+              <ul class="ul_footer">
+                  <li id="link_openedu"><a href="#" class="white_link">"Открытое образование"</a></li>
+                  <li id="link_elearn"><a href="#" class="white_link">"Портал электронного обучения"</a></li>
+                  <li id="link_exam1"><a href="#" class="white_link">"Центр независимой оценки результатов обучения"</a></li>
+                  <li id="link_exam2"><a href="#" class="white_link">"Exam2"</a></li>
+              </ul>
+              <h2 class="h2_footer" id="footer_images">Изображения:</h2>
+              <ul class="ul_footer">
+                  <li><a class="white_link" href="https://ru.freepik.com/free-vector/desktop-computer-vconcept-illustration_32318401.htm">Изображение от storyset</a> на Freepik</li>
+                  <li><a class="white_link" href="https://ru.freepik.com/icon/seal_12890965#fromView=search&page=2&position=33&uuid=9ea3ba18-376e-49e7-aee3-43f12ff6f162">Источник иконки: kerismaker</a></li>
+                </div>
+                <div class="footer_links2">
+                  <h2 class="h2_footer" id="footer_about_us">О нас</h2>
+                  <p class="footer_p" id="footer_about_us_p1">Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов</p>
+                  <p class="footer_p footer_p_last" id="footer_about_us_p2">Состав команды изменялся, и на данный момент в неё входят:</p>
+                <ul class="ul_footer" id="footer_about_us_ul" >
+                  <li>Глеб Шилов - тимлид и frontend разработчик</li>
+                  <li>Кирилл Серебряков - аналитик</li>
+                  <li>Вероника Гайнулаева - копирайтер и переводчик</li>
+                  <li>Александр Севрюк - дизайнер</li>
+                  <li> Дмитрий Китаев - frontend и backend разработчик</li>
+                </ul>
+                </div>
+                </div>
+            </div>
+          </footer>
+        </div>
+        <script src="js/translations1.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>    
