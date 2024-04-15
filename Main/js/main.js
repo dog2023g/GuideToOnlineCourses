@@ -4,9 +4,10 @@ function main(){
     Translate();
 }
 function InitializeTests(lang){
+    let button_answer={ru:"Ответить", en:"Answer", ch:"回答", ar:"إجابة",}
     let path_tests = document.getElementById('lesson_tests');
     if (path_tests==null){
-        return;
+        return 0;
     }
     var tests = tests_any_lang[lang];
     path_tests.innerHTML='';
@@ -25,7 +26,7 @@ function InitializeTests(lang){
             '<p>'+tests[i]["question"]+'</p>'+
         '</div>'+
         '<ul class="quiz-list" id="list_'+i+'">'+ many_answers +'</ul>'+
-        '<div class="bu"><button class="btn btn-success" onclick="checkAnswer('+i+', `'+lang+'`);" id="submit_'+i+'" >Ответить</button></div>'+
+        '<div class="bu"><button class="btn btn-success" onclick="checkAnswer('+i+', `'+lang+'`);" id="submit_'+i+'" >'+button_answer[lang]+'</button></div>'+
       '</div>';
     }
 }
@@ -69,7 +70,7 @@ function pageGoToId() {
         if (hash) {
             const element = document.querySelector(hash);
             if (element) {
-                const offset = -100; // Смещение на 100px вверх
+                const offset = -63; // Смещение на 100px вверх
                 const elementPosition = element.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset + offset;
                 window.scrollTo({
