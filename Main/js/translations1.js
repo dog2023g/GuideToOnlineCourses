@@ -223,8 +223,8 @@ const language={
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ar&">إلى الدرس السابع!</a></button>',
     },
     "h1_0":{ 
-        "ru": '«Регистрация почты УрФУ» (Как завести личный кабинет студента и корпоративную почту)',
-        "en": '"Registration of URFU Mail" (How to create a personal student account and corporate email)',
+        "ru": 'Регистрация почты УрФУ',
+        "en": 'Registration of URFU Mail',
         "ch": '',
         "ar": '',
     },
