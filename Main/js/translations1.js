@@ -30,73 +30,69 @@ const tests_any_lang={
       {
         question: '3. Получив корпоративную почту, ты…',
         answers: ['Запомнишь её, зафиксируешь в заметках',
-        'Тут же забудешь про неё. Зачем тебе ещё одна?',
-        'Отлично! Теперь пора приступать к следующему этапу!'],
+        'Тут же забудешь про неё. Зачем тебе ещё одна?',],
         correct: 1,
       }],
       en:[
         {
-          question: 'Английский. 1. Твои данные в поле идентификатора не находятся. Что будешь делать?',
-          answers: ['Проверю корректность своих данных, а также удостоверюсь, что уже можно начинать регистрироваться',
-          'Начну истерить, что ничего не получается'],
+          question: '1. Your data is not in the identifier field. What will you do?',
+          answers: ['Check the correctness of my data and make sure that I can start registering soon',
+          'Start panicking that nothing is working ☹'],
           correct: 1,
         },
         {
-            question: '2. Доступ к office.com не активировался сразу после подачи заявки. Твои действия?',
-            answers: ['Паникую, навожу суету',
-            'Пишу в техподдержку, чтобы как можно быстрее дали доступ!',
-            'Терпеливо жду 36 часов'],
+            question: '2. Access to office.com was not activated immediately after submitting the application. What will you do? ',
+            answers: ['Panic and create a fuss',
+            'Write to technical support to give access as soon as possible!',
+            'Patiently wait for a 36 hours'],
             correct: 3,
           },
           {
-            question: '3. Получив корпоративную почту, ты…',
-            answers: ['Запомнишь её, зафиксируешь в заметках',
-            'Тут же забудешь про неё. Зачем тебе ещё одна?',
-            'Отлично! Теперь пора приступать к следующему этапу!'],
+            question: '3. After receiving the corporate email, you...',
+            answers: ['Remember it and fix it in notes',
+            'Immediately forget about it. Why do you need another one?',],
             correct: 1,
           }],
-          ch:[
+        ch:[
             {
-              question: 'Китайский. 1. Твои данные в поле идентификатора не находятся. Что будешь делать?',
-              answers: ['Проверю корректность своих данных, а также удостоверюсь, что уже можно начинать регистрироваться',
-              'Начну истерить, что ничего не получается'],
+              question: '',
+              answers: ['',
+              ''],
               correct: 1,
             },
             {
-                question: '2. Доступ к office.com не активировался сразу после подачи заявки. Твои действия?',
-                answers: ['Паникую, навожу суету',
-                'Пишу в техподдержку, чтобы как можно быстрее дали доступ!',
-                'Терпеливо жду 36 часов'],
+                question: '',
+                answers: ['',
+                '',
+                ''],
                 correct: 3,
               },
               {
-                question: '3. Получив корпоративную почту, ты…',
-                answers: ['Запомнишь её, зафиксируешь в заметках',
-                'Тут же забудешь про неё. Зачем тебе ещё одна?',
-                'Отлично! Теперь пора приступать к следующему этапу!'],
+                question: '',
+                answers: ['',
+                '',],
                 correct: 1,
               }],
-              ar:[
+            ar:[
                 {
-                  question: 'Арабский. 1. Твои данные в поле идентификатора не находятся. Что будешь делать?',
-                  answers: ['Проверю корректность своих данных, а также удостоверюсь, что уже можно начинать регистрироваться',
-                  'Начну истерить, что ничего не получается'],
+                  question: '',
+                  answers: ['',
+                  ''],
                   correct: 1,
                 },
                 {
-                    question: '2. Доступ к office.com не активировался сразу после подачи заявки. Твои действия?',
-                    answers: ['Паникую, навожу суету',
-                    'Пишу в техподдержку, чтобы как можно быстрее дали доступ!',
-                    'Терпеливо жду 36 часов'],
+                    question: '',
+                    answers: ['',
+                    '',
+                    ''],
                     correct: 3,
                   },
                   {
-                    question: '3. Получив корпоративную почту, ты…',
-                    answers: ['Запомнишь её, зафиксируешь в заметках',
-                    'Тут же забудешь про неё. Зачем тебе ещё одна?',
-                    'Отлично! Теперь пора приступать к следующему этапу!'],
+                    question: '',
+                    answers: ['',
+                    '',],
                     correct: 1,
-                  }]
+            }]
     };
 
 const language={
@@ -184,18 +180,6 @@ const language={
         "ch": '讓我們向您介紹一下我們自己。 我們的團隊「Freedom Seals」成立於 2023 年，致力於創造酷炫的軟體產品',
         "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "Freedom Seals" في عام 2023 لإنشاء منتجات برمجية رائعة',
     },
-    "footer_about_us_p2":{ //футер
-        "ru": 'Состав команды изменялся, и на данный момент в неё входят:',
-        "en": 'The composition of the team has changed, and currently includes:',
-        "ch": '團隊的組成發生了變化，目前包括：',
-        "ar": 'لقد تغير تشكيل الفريق، وأصبح يضم حاليا:',
-    },
-    "footer_about_us_ul":{ //футер
-        "ru": '<li> - тимлид и frontend разработчик</li><li> - аналитик</li><li> - копирайтер и переводчик</li><li> - дизайнер</li><li>  - frontend и backend разработчик</li>',
-        "en": '<li> - team lead and frontend developer</li><li> - analyst</li><li> - copywriter and translator</li><li>  - designer</li><li>  - frontend and backend developer</li>',
-        "ch": '<li> - 團隊領導與前端開發人員</li><li>- 分析師</li><li> - 文案和翻譯</li><li>  - 設計師</li><li>   - 前端和後端開發人員</li>',
-        "ar": '<li> - قائد الفريق ومطور الواجهة الأمامية</li><li> - المحلل</li><li> - كاتب ومترجم</li><li>  - مصمم</li><li>  - مطور الواجهة الأمامية والخلفية</li>',
-    },
     "to_lesson_1":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К первому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=en&">To the first lesson!</a></button>',
@@ -238,5 +222,112 @@ const language={
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ch&"繼續第七課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ar&">إلى الدرس السابع!</a></button>',
     },
-    
+    "h1_0":{ 
+        "ru": '«Регистрация почты УрФУ» (Как завести личный кабинет студента и корпоративную почту)',
+        "en": '"Registration of URFU Mail" (How to create a personal student account and corporate email)',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_0":{ 
+        "ru": 'План урока',
+        "en": 'Themes',
+        "ch": '',
+        "ar": '',
+    },
+    "contents":{ 
+        "ru": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
+               '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
+               '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
+        "en": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> How to create a personal account at UrFU?</a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">How to get access to office.com and your email?</a></li>'+
+        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Knowledge check 😉</a></li>',
+        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
+        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
+        "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
+        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
+    },
+    "h2_1":{ 
+        "ru": 'Как завести личный кабинет УрФУ?',
+        "en": 'How to create a personal account at UrFU?',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_1__p_0":{ 
+        "ru": 'Первым делом тебе необходимо завести личный кабинет УрФУ, учетную запись студента УрФУ. Для этого:',
+        "en": 'First of all, you need to create a personal account at UrFU, a student account at UrFU. To do this:',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_1__ul_0":{ 
+        "ru": '<li>Зайди на сайт идентификации <a href="https://id.urfu.ru/AccessManagement/Identify/GetAccount">id.urfu.ru</a>.</li>',
+        "en": '',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_1__ul_1":{ 
+        "ru": '<li>В поле «Идентификатор» введи свои контактные данные из списка.</li>'+
+        '<li>Найди себя, пройди аутентификацию и зарегистрируйся на портале.</li>',
+        "en": '<li>Go to the identification website id.urfu.ru.</li>'+
+                '<li>In the "Identifier" field, enter your contact information from the list.</li>',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_1__p_1":{ 
+        "ru": 'Поздравляем! Теперь у тебя есть свой личный кабинет!',
+        "en": 'Congratulations! Now you have your own personal account!',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_2":{ 
+        "ru": 'Как получить доступ к office.com и своей почте?',
+        "en": 'How to access office.com and your email?',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_2__p_0":{ 
+        "ru": 'Далее тебе необходимо получить личную корпоративную почту от УрФУ. Для этого:',
+        "en": 'Next, you need to get your personal corporate email from Ural Federal University. To do this:',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_2__ul_0":{ 
+        "ru": '<li>Пройди на соответствующую <a href="https://office365.urfu.ru/">страницу</a> и войди в аккаунт студента УрФУ.</li>'+
+        '<li>Далее необходимо получить доступ к сервисам Microsoft Office 365. На странице будет кнопка «Перейти к активации», нажми на неё. На новой странице ознакомься с соглашениями и нажми на «Активировать». В течении 36 часов заявка будет одобрена.</li>',
+        "en": '<li>Go to the corresponding <a href="https://office365.urfu.ru/">page</a> and log in to the Ural Federal University student account.</li>'+
+        '<li>Next, you need to access Microsoft Office 365 services. On the page, there will be a pink button "Activate", click on it. Within 36 hours, the request will be approved.</li>',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_2__ul_1":{ 
+        "ru": '<li>Когда доступ будет активирован, на этой же странице снова будет розовая кнопка «Перейти к использованию сервиса». Нажав на неё, ты попадёшь на портал <a href="https://www.microsoft365.com/">office.com</a>. Выполнив минимальные настройки, ты наконец получишь доступ к некоторым веб-приложениям и персональную почту с доменом @urfu.me.</li>',
+        "en": '<li>When the access is activated, on the same page, there will be a pink button "Go to use the service" again. By clicking on it, you will go to the <a href="https://www.microsoft365.com/">office.com</a> portal. After making minimal settings, you will finally get access to some web applications and personal email with the @urfu.me domain</li>',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_2__p_1":{ 
+        "ru": 'Запомни её! Она пригодится на следующем этапе.',
+        "en": 'Remember it! It will come in handy at the next stage.',
+        "ch": '',
+        "ar": '',
+    },
+    "h2_2__p_2":{ 
+        "ru": '<a href="https://vk.com/video-196169577_456239026"> Cсылка</a> на источник двух предыдущих фото',
+        "en": '<a href="https://vk.com/video-196169577_456239026">Link </a> to the source of the two previous photos',
+        "ch": '',
+        "ar": '',
+    },
+    "test":{ 
+        "ru": 'Тест',
+        "en": 'Test',
+        "ch": '',
+        "ar": '',
+    },
+    "after_test":{ 
+        "ru": 'Отлично! Теперь пора приступать к следующему этапу!',
+        "en": 'Great! Now its time to move on to the next stage!',
+        "ch": '',
+        "ar": '',
+    },
 };
