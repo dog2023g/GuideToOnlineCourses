@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Руководство по онлайн-курсам</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav class="navbar navbar-expand-md bg-body-tertiary">
+                    <div class="container-fluid">
+                      <span  id="link_our_name">
+                      <a class="navbar-brand" href="#">
+                        <img src="img/seal_12890965.png" alt="&nbspТюлени Свободы" width="50" height="50">
+                      </a>
+                    </span>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item" id="link_name">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                          </li>
+                          <li class="nav-item" id="link_lessons">
+                            <a class="nav-link" href="#">Уроки</a>
+                          </li>
+                          <li class="nav-item" id="link_about_us">
+                            <a class="nav-link" href="#">О нас</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span id="button_translate">Перевод</span>
+                            </a>
+                            <span id="dropdown-menu">
+                            <ul class="dropdown-menu"></span>
+                                <li><a type="button"  class="dropdown-item" onclick="updateQueryParameter('lang','ru'); Translate();" >Русский</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','en'); Translate();" >English</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ch'); Translate();" >中國人</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ar'); Translate();"> عربي</a>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search" id="search">
+                          <input class="form-control me-2" type="search" placeholder="Например: Exam2" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Найти</button>
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="lesson_page_container">
+                  <h1 class="lesson_page_h1" id="h1_0">Регистрация на платформах</h1>
+                  <h2 class="lesson_page_h2" id="h2_0">План урока</h2>
+                  <ul class="page_lesson_content" id="contents">
+                    <li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Регистрация на платформе <a href="https://openedu.ru/"> «Открытое образование» </a> (он же ОпенЕду) </a></li>
+                    <li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Регистрация на платформе <a href="https://exam1.urfu.ru/"> «Центр независимой оценки результатов обучения» </a> (он же exam1)</a></li>
+                    <li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Регистрация на платформе <a href="https://elearn.urfu.ru">  «Портал электронного обучения» </a> (он же elearn)</a></li>
+                    <li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>
+                  </ul>
+                  <br>
+                  <p id="p_0"> Теперь тебе нужно зарегистрироваться на платформе проведения онлайн-курса!</p>
+                  <h2 id="h2_1" class="lesson_page_h2">Регистрация на платформе <a href="https://openedu.ru/"> «Открытое образование» </a> (он же ОпенЕду)</h2>
+                  <p id="h2_1__p_0">Если твой курс проходит на платформе «Открытое образование»:</p>
+                  <ul id="h2_1__ul_0" class="page_lesson_ul">
+                    <li>Зайди на сайт платформы, нажми поле «Вход», а затем – «Регистрация»</li>
+                    <li>Зарегистрируйся: введи свои ФИО, придумай оригинальный логин и пароль</li>
+                    <li>В графе «E-mail» укажи свою корпоративную почту с доменом @urfu.me</li>
+                  </ul>
+                  <div class="img_lesson_sm">
+                    <img src="img/lesson2_0.jpg" alt="">
+                    </div>
+                  <p id="h2_1__p_1" >Обрати внимание: если у тебя уже был аккаунт на платформе, то всё равно нужно создать новый!</p>
+                  <ul id="h2_1__ul_1" class="page_lesson_ul">
+                    <li>Отметь «Я - студент российского вуза», укажи вуз (если что, «Уральский федеральный университет имени первого президента России Б. Н. Ельцина») и год обучения</li>
+                    <li>При необходимости подтверди регистрацию через почту. Сделать это можно через на платформе <a href="https://outlook.office.com">outlook.com</a></li>
+                  </ul>
+                  <h2 id="h2_2">Регистрация на платформе <a class="inline-block" href="https://exam1.urfu.ru/"> «Центр независимой оценки результатов обучения» </a> (он же exam1) <br> Регистрация на платформе <a href="https://elearn.urfu.ru"> «Портал электронного обучения»</a> (он же elearn)</h2>
+                  <p id="h2_2__p_0">Если твой курс проходит на платформах «Центр независимой оценки результатов обучения» или «Портал электронного обучения»:</p>
+                  <ul id="h2_2__ul_0" class="page_lesson_ul">
+                    <li>Зайди на сайт <a href="https://exam1.urfu.ru/"> одной </a> из <a href="https://elearn.urfu.ru"> платформ</a>, нажми поле «Вход» и зайди через «Личный кабинет студента»</li>
+                  </ul>
+                  <p id="h2_2__p_1">Так как обе платформы напрямую связаны с УрФУ, дополнительная регистрация не нужна</p>
+                  <h2 id="test" class="lesson_page_h2">Тест</h2>
+                  <div class="lesson_tests" id="lesson_tests">
+                    <div class="quiz_lesson" id="quiz">
+                      <div class="quiz-header" id="header">
+                          <p></p>
+                      </div>
+                      <ul class="quiz-list" id="list"> 
+                        <li>
+                          <label>
+                            <input type="radio" class="answer" name="answer">
+                            <span></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" class="answer" name="answer">
+                            <span></span>
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="bu"><button class="btn btn-success" id="submit">Ответить</button></div>
+                    </div>
+                    
+                  </div>
+                  <div class="result_of_tests" id="result_of_tests"></div>
+                  <br>
+                  <h2 id="after_test">Отлично! Теперь пора приступать к следующему этапу!</h2>
+                  <div class="link_to_other_lessons">
+                    <div id="to_lesson_1">
+                      <button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К второму уроку!</a></button>
+                    </div>
+                    <div id="to_lesson_3">
+                      <button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_3+'?lang=ru&">К третьему уроку!</a></button>
+                    </div>
+                  </div>
+                </div>
+            </main>
+            <footer id="footer">
+              <h1 class="h1_footer" id="h1_footer">Полезные ссылки</h1>
+              <div class="footer_container">
+                <div class="footer_links1">
+                  <h2 class="h2_footer" id="h2_footer">Учебные платформы:</h2>
+              <ul class="ul_footer">
+                  <li id="link_openedu"><a href="#" class="white_link">"Открытое образование"</a></li>
+                  <li id="link_elearn"><a href="#" class="white_link">"Портал электронного обучения"</a></li>
+                  <li id="link_exam1"><a href="#" class="white_link">"Центр независимой оценки результатов обучения"</a></li>
+                  <li id="link_exam2"><a href="#" class="white_link">"Exam2"</a></li>
+              </ul>
+              <h2 class="h2_footer" id="footer_images">Изображения:</h2>
+              <ul class="ul_footer">
+                  <li><a class="white_link" href="https://ru.freepik.com/free-vector/desktop-computer-vconcept-illustration_32318401.htm">Изображение от storyset</a> на Freepik</li>
+                  <li><a class="white_link" href="https://ru.freepik.com/icon/seal_12890965#fromView=search&page=2&position=33&uuid=9ea3ba18-376e-49e7-aee3-43f12ff6f162">Источник иконки: kerismaker</a></li>
+                </div>
+                <div class="footer_links2">
+                  <h2 class="h2_footer" id="footer_about_us">О нас</h2>
+                  <p class="footer_p" id="footer_about_us_p1">Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов</p>
+                  <p class="footer_p footer_p_last" id="footer_about_us_p2"></p>
+                <ul class="ul_footer" id="footer_about_us_ul" >
+                  <li></li>
+                </ul>
+                </div>
+                </div>
+            </div>
+          </footer>
+        </div>
+        <script src="js/translations2.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>    
