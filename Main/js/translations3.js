@@ -256,8 +256,8 @@ const language={
         "ar": '',
     },
     "h2_1":{
-        "ru": 'Курсы на платформе «Открытое образование»',
-        "en": 'The courses on the "Открытое образование (Open Education)" platform',
+        "ru": 'Курсы на платформе <a href="https://openedu.ru/"> «Открытое образование» </a>',
+        "en": 'The courses on the  <a href="https://openedu.ru/"> "Открытое образование (Open Education)"</a> platform',
         "ch": '',
         "ar": '',
     },
@@ -300,8 +300,8 @@ const language={
         "ar": '',
     },
     "h2_2":{
-        "ru": 'Курсы на платформе «Центр независимой оценки результатов обучения»',
-        "en": 'The courses on the "Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)" platform',
+        "ru": 'Курсы на платформе <a class="inline-block" href="https://exam1.urfu.ru/"> «Центр независимой оценки результатов обучения» </a>',
+        "en": 'The courses on the  <a class="inline-block" href="https://exam1.urfu.ru/">"Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)"</a> platform',
         "ch": '',
         "ar": '',
     },
@@ -322,8 +322,8 @@ const language={
         '<li> </li>',
     },
     "h2_3":{
-        "ru": 'Курсы на платформе «Портал электронного обучения»',
-        "en": 'The courses on the "Портал электронного обучения (Electronic Learning Portal)" platform',
+        "ru": 'Курсы на платформе  <a class="inline-block" href="https://elearn.urfu.ru"> «Портал электронного обучения»</a>',
+        "en": 'The courses on the <a class="inline-block" href="https://elearn.urfu.ru"> "Портал электронного обучения (Electronic Learning Portal)" </a> platform',
         "ch": '',
         "ar": '',
     },
