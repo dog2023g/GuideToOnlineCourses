@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Руководство по онлайн-курсам</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav class="navbar navbar-expand-md bg-body-tertiary">
+                    <div class="container-fluid">
+                      <span  id="link_our_name">
+                      <a class="navbar-brand" href="#">
+                        <img src="img/seal_12890965.png" alt="&nbspТюлени Свободы" width="50" height="50">
+                      </a>
+                    </span>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item" id="link_name">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                          </li>
+                          <li class="nav-item" id="link_lessons">
+                            <a class="nav-link" href="#">Уроки</a>
+                          </li>
+                          <li class="nav-item" id="link_about_us">
+                            <a class="nav-link" href="#">О нас</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span id="button_translate">Перевод</span>
+                            </a>
+                            <span id="dropdown-menu">
+                            <ul class="dropdown-menu"></span>
+                                <li><a type="button"  class="dropdown-item" onclick="updateQueryParameter('lang','ru'); Translate();" >Русский</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','en'); Translate();" >English</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ch'); Translate();" >中國人</a>
+                                <li><a type="button" class="dropdown-item" onclick="updateQueryParameter('lang','ar'); Translate();"> عربي</a>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search" id="search">
+                          <input class="form-control me-2" type="search" placeholder="Например: Exam2" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Найти</button>
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="lesson_page_container">
+                  <h1 class="lesson_page_h1" id="h1_0">Перевод баллов</h1>
+                  <h2 class="lesson_page_h2" id="h2_0">План урока</h2>
+                  <ul class="page_lesson_content" id="contents">
+                    <li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();">Смешанные курсы</a></li>
+                    <li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Курсы на платформе «Открытое образование»</a></li>
+                    <li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>
+                  </ul>
+                  <p id="h2_0__p_0">Надеемся, ты справился с тестированием. Теперь ты узнаешь, как полученные тобой баллы за курс будут перенесены в БРС.</p>
+                  <h2 id="h2_1" class="lesson_page_h2">Смешанные курсы</h2>
+                  <p id="h2_1__p_0">Курсы предметов смешанного формата переводятся согласно коэффициентам в <a href="https://istudent.urfu.ru/s/servis-informirovaniya-studenta-o-ballah-brs"> БРС</a>. Причём прогресс и экзамен идут отдельно друг от друга.</p>
+                  <div id="h2_1__img_0" class="img_lesson_sm">
+                    <img src="img/lesson6_0.jpg" alt="">
+                    </div>
+                  <h2 id="h2_2" class="lesson_page_h2">Курсы на платформе «Открытое образование»</h2>
+                  <p id="h2_2__p_0">Онлайн-курсы как отдельный самостоятельный предмет, переводятся следующим образом:</p>
+                  <ul id="h2_2__ul_0" class="page_lesson_ul">
+                    <li>В БРС нет разделения на экзамен и прогресс</li>
+                    <li>Курсы от УрФУ переводятся в точности с отображаемыми баллами</li>
+                    <li>Курсы с совпадающей системой оценивания так же переводятся в точности с отображаемыми баллами</li>
+                    <li>Курсы от вузов-партнёров с несовпадающей системой оценивания переводятся в соответствии с формулой:</li>
+                    </ul>
+                    <div id="h2_2__img_0" class="img_lesson">
+                        <img src="img/lesson6_1.png" alt="">
+                    </div>
+                    <p id="h2_2__p_1">Где Бу – балл по 100-бальной шкале УрФУ</p>
+                    <p id="h2_2__p_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бп – балл по 100-бальной шкале вуза-партнера</p>
+                    <p id="h2_2__p_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нп – значение нижней границы диапазона, соответствующего определённой оценке по   5-балльной шкале вуза-партнера</p>
+                    <p id="h2_2__p_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ну – значение нижней границы диапазона, соответствующего определённой оценке по   5-балльной шкале УрФУ</p>
+                    <p id="h2_2__p_5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; КЗп – количество значений в диапазоне, соответствующего той же оценке по  5-балльной шкале вуза-партнера</p>
+                    <p id="h2_2__p_6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; КЗп – количество значений в диапазоне, соответствующего той же оценке по  5-балльной шкале УрФУ</p>
+                    <ul id="h2_2__ul_1" class="page_lesson_ul">
+                        <li>Формула выглядит сложно и непонятно, но это нормально. Главное – старайся набрать как можно больше баллов, чтобы не гадать, набрал ли на зачёт или нет.</li>
+                        </ul>
+                    
+                  <h2 id="test" class="lesson_page_h2">Тест</h2>
+                  <div class="lesson_tests" id="lesson_tests">
+                    <div class="quiz_lesson" id="quiz">
+                      <div class="quiz-header" id="header">
+                          <p></p>
+                      </div>
+                      <ul class="quiz-list" id="list"> 
+                        <li>
+                          <label>
+                            <input type="radio" class="answer" name="answer">
+                            <span></span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" class="answer" name="answer">
+                            <span></span>
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="bu"><button class="btn btn-success" id="submit">Ответить</button></div>
+                    </div>
+                    
+                  </div>
+                  <div class="result_of_tests" id="result_of_tests"></div>
+                  <br>
+                  <h2 id="after_test">Отлично! Теперь пора приступать к следующему этапу!</h2>
+                  <div class="link_to_other_lessons">
+                    <div id="to_lesson_5">
+                      <button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">К второму уроку!</a></button>
+                    </div>
+                    <div id="to_lesson_7">
+                      <button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_3+'?lang=ru&">К третьему уроку!</a></button>
+                    </div>
+                  </div>
+                </div>
+            </main>
+            <footer id="footer">
+              <h1 class="h1_footer" id="h1_footer">Полезные ссылки</h1>
+              <div class="footer_container">
+                <div class="footer_links1">
+                  <h2 class="h2_footer" id="h2_footer">Учебные платформы:</h2>
+              <ul class="ul_footer">
+                  <li id="link_openedu"><a href="#" class="white_link">"Открытое образование"</a></li>
+                  <li id="link_elearn"><a href="#" class="white_link">"Портал электронного обучения"</a></li>
+                  <li id="link_exam1"><a href="#" class="white_link">"Центр независимой оценки результатов обучения"</a></li>
+                  <li id="link_exam2"><a href="#" class="white_link">"Exam2"</a></li>
+              </ul>
+              <h2 class="h2_footer" id="footer_images">Изображения:</h2>
+              <ul class="ul_footer">
+                  <li><a class="white_link" href="https://ru.freepik.com/free-vector/desktop-computer-vconcept-illustration_32318401.htm">Изображение от storyset</a> на Freepik</li>
+                  <li><a class="white_link" href="https://ru.freepik.com/icon/seal_12890965#fromView=search&page=2&position=33&uuid=9ea3ba18-376e-49e7-aee3-43f12ff6f162">Источник иконки: kerismaker</a></li>
+                </div>
+                <div class="footer_links2">
+                  <h2 class="h2_footer" id="footer_about_us">О нас</h2>
+                  <p class="footer_p" id="footer_about_us_p1">Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов</p>
+                  <p class="footer_p footer_p_last" id="footer_about_us_p2"></p>
+                <ul class="ul_footer" id="footer_about_us_ul" >
+                  <li></li>
+                </ul>
+                </div>
+                </div>
+            </div>
+          </footer>
+        </div>
+        <script src="js/translations6.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>    
