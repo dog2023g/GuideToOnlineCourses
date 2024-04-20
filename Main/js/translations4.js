@@ -76,7 +76,7 @@ const tests_any_lang={
             ar:[
                 {
                     question: '',
-                    answers: ['',
+                    answers: ['' ,
                     ''],
                     correct: 1,
                   },
