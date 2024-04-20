@@ -34,21 +34,21 @@ const tests_any_lang={
       }],
       en:[
         {
-            question: '',
-            answers: ['',
-            '', ''],
+            question: '1. Well, you have ended up in a retake. What will you do?',
+            answers: ['Calmly identify the reason, confidently solve the problem',
+            'I dont know what to do. Panic!', ' I dont care at all'],
             correct: 1,
           },
           {
-              question: '',
-              answers: ['',
-              '',],
+              question: '2. The final assessment was not passed, and there is no email with an explanation. What to do?',
+              answers: ['Write to the tech support at exam1@urfu.ru',
+              'Hope for the best',],
               correct: 1,
             },
             {
-              question: '',
-              answers: ['',
-              '',],
+              question: '3. Failed the proctoring on the first attempt. What will you do? ',
+              answers: ['Hope that everything will be counted anyway',
+              'I will keep an eye on the news about retake dates and sign up for the repeat final assessment',],
               correct: 2,
             }],
         ch:[
@@ -209,7 +209,7 @@ const language={
     "to_lesson_6":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ru&">К шестому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=en&">To the sixth lesson!</a></button>',
-        "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ch&"繼續第六課！</a></button>',
+        "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ch&"> 繼續第六課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ar&">إلى الدرس السادس!</a></button>',
     },
     "to_lesson_7":{ //ссылка на урок
@@ -235,9 +235,9 @@ const language={
                '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Задолженность по онлайн-курсам на платформе «Открытое образование»</a></li>'+
                '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Пересдача итогового контроля на платформе «Открытое образование»</a></li>'+
                '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
-        "en": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> How to create a personal account at UrFU?</a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">How to get access to office.com and your email?</a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Пересдача итогового контроля на платформе «Открытое образование»</a></li>'+
+        "en": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Retaking courses on the " Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)" platform</a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Outstanding debts for online courses on the "Открытое образование (Open Education)" platform</a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Retaking final exams on the "Открытое образование (Open Education)" platform</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Knowledge check 😉</a></li>',
         "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
@@ -250,19 +250,19 @@ const language={
     },
     "h2_0__p_0":{ 
         "ru": 'Очень надеемся на то, что тебе этот урок не понадобится, но тем не менее он очень важен. Итак, ты попал на пересдачу. Не переживай, это вполне нормальное явление.',
-        "en": '',
+        "en": 'We really hope that you wont need this lesson, but nevertheless it is very important. So, you have failed the exam and need to retake it. Dont worry, this is a normal occurrence.',
         "ch": '',
         "ar": '',
     },
     "h2_1":{ 
         "ru": 'Пересдача курсов на платформе «Центр независимой оценки результатов обучения»',
-        "en": '',
+        "en": 'Retaking courses on the " Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)" platform',
         "ch": '',
         "ar": '',
     },
     "h2_1__p_0":{ 
         "ru": 'О неуспешной сдаче итогового контроля и причине тебе сообщат по почте. А ещё скажут дату пересдачи этого экзамена, она автоматически появится в графе «Меню» в списке экзаменов.',
-        "en": '',
+        "en": 'If you have not passed the final exam and the reason will be communicated to you by email, along with the date for retaking the exam, which will appear automatically in the "Menu" section under the exams list. The first and second retakes are conducted online, while the next one is in-person.',
         "ch": '',
         "ar": '',
     },
@@ -274,13 +274,13 @@ const language={
     },
     "h2_2":{ 
         "ru": 'Задолженность по онлайн-курсам на платформе «Открытое образование»',
-        "en": '',
+        "en": 'Outstanding debts for online courses on the "Открытое образование (Open Education)" platform',
         "ch": '',
         "ar": '',
     },
     "h2_2__p_0":{ 
         "ru": 'Для погашения задолженности в текущих условиях тебе необходимо сделать следующее:',
-        "en": '',
+        "en": 'To clear your debt under current conditions, you need to:',
         "ch": '',
         "ar": '',
     },
@@ -291,12 +291,12 @@ const language={
         '<li> Подать заявку на открытие доступа для прохождения итогового контроля. После обработки заявки на электронную почту придет уведомление, когда можно приступить к прохождению итогового контроля.</li>'+
         '<li>Записаться на прохождение итогового контроля с прокторингом и пройти его без нарушений. </li>'+
         '<li> Написать письмо на openedu@urfu.ru и попросить зафиксировать результат и загрузить его в БРС.</li>',
-        "en": '<li> </li>'+
-        '<li> </li>'+
-        '<li> </li>'+
-        '<li> </li>'+
-        '<li> </li>'+
-        '<li> </li>',
+        "en": '<li>Enroll in the current course launch in the new semester </li>'+
+        '<li> Write an email to openedu@urfu.ru requesting to be added to the debtors group to provide full access to the course</li>'+
+        '<li>Achieve a passing score in each section, except for the final exam </li>'+
+        '<li>Submit a request for access to take the final exam. After processing the request, you will receive a notification via email when you can start taking the final exam. </li>'+
+        '<li>Sign up to take the final exam with proctoring and pass it without any violations. </li>'+
+        '<li>Write an email to openedu@urfu.ru and request to record the result and upload it to the BRS. </li>',
         "ch": '<li> </li>'+
         '<li> </li>'+
         '<li> </li>'+
@@ -312,19 +312,19 @@ const language={
     },
     "h2_2__p_1":{ 
         "ru": 'После этого задолженность будет закрыта.',
-        "en": '',
+        "en": 'After completing these steps, your debt will be cleared.',
         "ch": '',
         "ar": '',
     },
     "h2_3":{ 
         "ru": 'Пересдача итогового контроля на платформе «Открытое образование»',
-        "en": '',
+        "en": 'Retaking final exams on the "Открытое образование (Open Education)" platform',
         "ch": '',
         "ar": '',
     },
     "h2_3__p_0":{ 
         "ru": 'Если итоговый контроль не сдан, пропущен, отклонён проктором или стоит низкий балл, то его нужно пересдать. Для этого:',
-        "en": '',
+        "en": 'If the final assessment is not passed, missed, rejected by the proctor, or has a low score, it will be necessary to retake it. To do this:',
         "ch": '',
         "ar": '',
     },
@@ -332,9 +332,9 @@ const language={
         "ru": '<li>Иметь проходной балл за решение курса </li>'+
         '<li> Группа должна быть «УрФУ_Весна/Осень*год*» либо «УрФУ_Задолженность»</li>'+
         '<li>Записаться на новый экзамен в соответствующей системе прокторинга </li>',
-        "en": '<li> </li>'+
-        '<li> </li>'+
-        '<li> </li>',
+        "en": '<li> Have a passing grade for completing the course</li>'+
+        '<li> The group should be "Urfu_Spring/Autumn*year*" or "Urfu_Debt"</li>'+
+        '<li> Sign up for a new exam in the corresponding proctoring system</li>',
         "ch": '<li> </li>'+
         '<li> </li>'+
         '<li> </li>',
