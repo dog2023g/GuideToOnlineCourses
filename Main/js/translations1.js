@@ -55,22 +55,22 @@ const tests_any_lang={
           }],
         ch:[
             {
-              question: '',
-              answers: ['',
-              ''],
+              question: '1. 您的数据不在标识符字段中。 你会怎么做？',
+              answers: [' 我将检查我的数据的正确性，并确保我可以开始注册',
+              '我会因为一事无成而变得歇斯底里 ☹'],
               correct: 1,
             },
             {
-                question: '',
-                answers: ['',
-                '',
-                ''],
+                question: '提交申请后未立即激活对office.com的访问。 你的行动？',
+                answers: ['我惊​​慌失措、大惊小怪',
+                '我正在写信给技术支持以尽快获得访问权限！',
+                ' 耐心等待36小时'],
                 correct: 3,
               },
               {
-                question: '',
-                answers: ['',
-                '',],
+                question: '收到公司邮件后，您...',
+                answers: ['记住它，把它写在你的笔记中',
+                ' 你会立即忘记她。 为什么还需要另一份？',],
                 correct: 1,
               }],
             ar:[
@@ -225,13 +225,13 @@ const language={
     "h1_0":{ 
         "ru": 'Регистрация почты УрФУ',
         "en": 'Registration of URFU Mail',
-        "ch": '',
+        "ch": 'UrFU邮件注册',
         "ar": 'الدرس 1',
     },
     "h2_0":{ 
         "ru": 'План урока',
         "en": 'Themes',
-        "ch": '',
+        "ch": '課程計劃',
         "ar": 'خطة الدرس',
     },
     "contents":{ 
@@ -241,9 +241,9 @@ const language={
         "en": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> How to create a personal account at UrFU?</a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">How to get access to office.com and your email?</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Knowledge check 😉</a></li>',
-        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
-        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
+        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 如何在UrFU 创建个人帐户？ </a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">如何访问office.com 和您的邮件？</a></li>'+
+        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();"> 知识测试😉</a></li>',
         "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> كيفية إنشاء حساب طالب في جامعة الفيدرالية الأورالية؟ </a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">كيفية الوصول إلى office.com وبريدك الإلكتروني؟</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();"> فحص المعرفة 😉</a></li>',
@@ -251,19 +251,19 @@ const language={
     "h2_1":{ 
         "ru": 'Как завести личный кабинет УрФУ?',
         "en": 'How to create a personal account at UrFU?',
-        "ch": '',
+        "ch": '如何在UrFU 创建个人帐户？',
         "ar": 'كيفية إنشاء حساب طالب في جامعة الفيدرالية الأورالية؟',
     },
     "h2_1__p_0":{ 
         "ru": 'Первым делом тебе необходимо завести личный кабинет УрФУ, учетную запись студента УрФУ. Для этого:',
         "en": 'First of all, you need to create a personal account at UrFU, a student account at UrFU. To do this:',
-        "ch": '',
+        "ch": '首先，您需要创建一个UrFU个人帐户，即UrFU学生帐户。 为了这：',
         "ar": 'أولاً، يجب عليك إنشاء حساب طالب في جامعة الفيدرالية الأورالية، حساب طالب في جامعة الفيدرالية الأورالية. للقيام بذلك:',
     },
     "h2_1__ul_0":{ 
         "ru": '<li>Зайди на сайт идентификации <a href="https://id.urfu.ru/AccessManagement/Identify/GetAccount">id.urfu.ru</a>.</li>',
-        "en": ' <li>    </li>',
-        "ch": ' <li>    </li>',
+        "en": ' <li>Go to the identification site  <a href="https://id.urfu.ru/AccessManagement/Identify/GetAccount">id.urfu.ru</a>.  </li>',
+        "ch": ' <li> 访问身份识别网站 <a href=" https://id.urfu.ru/AccessManagement/Identify/GetAccount "> id.urfu.ru </a>。   </li>',
         "ar": ' <li>  <a href="https://id.urfu.ru/AccessManagement/Identify/GetAccount"> id.urfu.ru </a> انتقل إلى موقع التحقق من الهوية  </li>',
     },
     "h2_1__ul_1":{ 
@@ -271,27 +271,27 @@ const language={
         '<li>Найди себя, пройди аутентификацию и зарегистрируйся на портале.</li>',
         "en": '<li>Go to the identification website id.urfu.ru.</li>'+
                 '<li>In the "Identifier" field, enter your contact information from the list.</li>',
-        "ch": '<li></li>'+
-        '<li></li>',
+        "ch": '<li> 在“标识符”字段中，输入列表中您的联系信息。</li>'+
+        '<li>在门户上找到自己、进行身份验证并注册。</li>',
         "ar": '<li>في الحقل "المعرف"، أدخل بيانات الاتصال الخاصة بك من القائمة.</li>'+
         '<li>ابحث عن نفسك، وقم بالمصادقة والتسجيل على البوابة</li>',
     },
     "h2_1__p_1":{ 
         "ru": 'Поздравляем! Теперь у тебя есть свой личный кабинет!',
         "en": 'Congratulations! Now you have your own personal account!',
-        "ch": '',
+        "ch": '恭喜！ 现在您拥有自己的个人帐户了！',
         "ar": 'تهانينا! الآن لديك حساب شخصي!',
     },
     "h2_2":{ 
         "ru": 'Как получить доступ к office.com и своей почте?',
         "en": 'How to access office.com and your email?',
-        "ch": '',
+        "ch": '如何访问office.com 和您的邮件？',
         "ar": 'كيفية الوصول إلى office.com وبريدك الإلكتروني؟',
     },
     "h2_2__p_0":{ 
         "ru": 'Далее тебе необходимо получить личную корпоративную почту от УрФУ. Для этого:',
         "en": 'Next, you need to get your personal corporate email from Ural Federal University. To do this:',
-        "ch": '',
+        "ch": '接下来，您需要接收来自 UrFU 的个人公司邮件。 为了这：',
         "ar": 'بعد ذلك، يجب عليك الحصول على بريد إلكتروني تابع لجامعة الفيدرالية الأورالية. للقيام بذلك:',
     },
     "h2_2__ul_0":{ 
@@ -299,21 +299,21 @@ const language={
         '<li>Далее необходимо получить доступ к сервисам Microsoft Office 365. На странице будет кнопка «Перейти к активации», нажми на неё. На новой странице ознакомься с соглашениями и нажми на «Активировать». В течении 36 часов заявка будет одобрена.</li>',
         "en": '<li>Go to the corresponding <a href="https://office365.urfu.ru/">page</a> and log in to the Ural Federal University student account.</li>'+
         '<li>Next, you need to access Microsoft Office 365 services. On the page, there will be a pink button "Activate", click on it. Within 36 hours, the request will be approved.</li>',
-        "ch": '<li></li>'+
-        '<li></li>',
+        "ch": '<li>转至相应<a href="https://office365.urfu.ru/">页</a>面并登录您的乌拉尔联邦大学学生帐户。</li>'+
+        '<li> 接下来，您需要访问Microsoft Office 365 服务，页面上将出现“继续激活”按钮，单击它。 在新页面上，阅读协议并点击“激活”。 申请将在 36 小时内获得批准。</li>',
         "ar": '<li>المناسبة وقم بتسجيل الدخول إلى حساب طالب في جامعة الفيدرالية الأورالية. <a href="https://office365.urfu.ru/ ">الصفحة </a> انتقل إلى</li>'+
         '<li> بعد ذلك، يجب الحصول على وصول إلى خدمات Microsoft Office 365. ستجد زر "الانتقال إلى التنشيط" على الصفحة. انقر فوقه. على الصفحة الجديدة، اطلع على الاتفاقيات وانقر على "تنشيط". سيتم الموافقة على الطلب في غضون 36 ساعة</li>',
     },
     "h2_2__ul_1":{ 
         "ru": '<li>Когда доступ будет активирован, на этой же странице снова будет розовая кнопка «Перейти к использованию сервиса». Нажав на неё, ты попадёшь на портал <a href="https://www.microsoft365.com/">office.com</a>. Выполнив минимальные настройки, ты наконец получишь доступ к некоторым веб-приложениям и персональную почту с доменом @urfu.me.</li>',
         "en": '<li>When the access is activated, on the same page, there will be a pink button "Go to use the service" again. By clicking on it, you will go to the <a href="https://www.microsoft365.com/">office.com</a> portal. After making minimal settings, you will finally get access to some web applications and personal email with the @urfu.me domain</li>',
-        "ch": '<li></li>',
+        "ch": '<li>激活访问后，同一页面上将再次出现粉红色的“继续使用服务”按钮。 单击它将带您进入 <a href=" https://www.microsoft365.com/ "> office.com </a>门户。 完成最少的设置后，您最终将可以访问一些带有 @urfu.me 域的 Web 应用程序和个人邮件。</li>',
         "ar": '<li><a href="https://www.microsoft365.com/ ">office.com </a>عندما يتم تنشيط الوصول، ستجد زرًا ورديًا مع تعليمات "الانتقال إلى استخدام الخدمة" على نفس الصفحة. بعد النقر عليه، ستصل إلى بوابة بعد إجراء الإعدادات الأدنى، ستحصل أخيرًا على وصول إلى بعض التطبيقات الويب وبريدك الإلكتروني الشخصي بنطاق @urfu.me.</li>',
     },
     "h2_2__p_1":{ 
         "ru": 'Запомни её! Она пригодится на следующем этапе.',
         "en": 'Remember it! It will come in handy at the next stage.',
-        "ch": '',
+        "ch": '记住它！ 这将在下一步中有用。',
         "ar": 'تذكرها! ستكون مفيدة في المرحلة التالية.',
     },
     "h2_2__p_2":{ 
@@ -325,13 +325,13 @@ const language={
     "test":{ //test
         "ru": 'Тест',
         "en": 'Test',
-        "ch": '',
+        "ch": '测试1',
         "ar": 'اختبار',
     },
     "after_test":{ //тест
         "ru": 'Отлично! Теперь пора приступать к следующему этапу!',
         "en": 'Great! Now its time to move on to the next stage!',
-        "ch": '',
+        "ch": '伟大的！ 现在是时候进入下一阶段了！',
         "ar": 'رائع! الآن حان الوقت للانتقال إلى المرحلة التالية!',
     },
 };
