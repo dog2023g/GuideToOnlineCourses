@@ -53,21 +53,21 @@ const tests_any_lang={
             }],
         ch:[
             {
-                question: 'Китайский язык. 1. Ты уже знаешь, какие именно курсы нужно пройти, и хочешь поскорее начать. Что будешь делать?',
-                answers: ['Быстро запишусь на все курсы!',
-                'Буду ждать, пока меня запишут на все курсы', 'Проверю список онлайн-курсов и в зависимости от авторов курса запишусь самостоятельно либо подожду подключения'],
+                question: '1.您已经知道自己需要学习哪些课程并希望尽快开始。 你会怎么做？',
+                answers: ['我会尽快报名所有课程！',
+                '我会等到我注册完所有课程后', '我将检查在线课程列表，并根据课程的作者自行注册或等待连接'],
                 correct: 3,
               },
               {
-                  question: '2. На платформе «Открытое образование» твоя группа указана как «Группа по умолчанию». Твои действия?',
-                  answers: ['Подожду некоторое время, пока меня подключат. Иначе – напишу в техподдержку <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a>',
-                  'Ничего не буду делать. Всё так и должно быть. Наверное'],
+                  question: '在开放教育平台上，您的群组被列为“默认群组”。 你的行动？',
+                  answers: ['我会等一会儿，直到他们给我接通。 否则，我会写信给技术支持 <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a>',
+                  '我不会做任何事。 一切都是它应该的样子。 或许'],
                   correct: 1,
                 },
                 {
-                  question: '3. Тебе сообщили, что курс будет осуществляться на платформе «Портал электронного обучения», но вот кодовое слово никто так и не сказал. Как поступишь?',
-                  answers: ['Буду вбивать случайные слова. А вдруг смогу подобрать?',  'Уточню у преподавателя',
-                  'Забуду про курс и буду заниматься чем-то другим. Раз не сообщили, значит не так уж это и важно!',],
+                  question: '.您被告知课程将在“E-Learning Portal”平台上进行，但没有人说出暗号。 你会怎么做？',
+                  answers: ['我将随机输入单词。 如果我能捡起来怎么办？',  '我会和老师确认一下',
+                  '我会忘记课程并去做其他事情。 既然他们没有报告，那就说明这件事没那么重要！',],
                   correct: 2,
                 }],
             ar:[
@@ -222,13 +222,13 @@ const language={
     "h1_0":{ //Начальные теги в уроках
         "ru": 'Регистрация на курс',
         "en": 'Registration of URFU Mail',
-        "ch": '',
+        "ch": '注册课程',
         "ar": 'التسجيل في الدورة" (كيفية التسجيل في الدورات عبر الإنترنت)',
     },
     "h2_0":{ //Начальные теги в уроках
         "ru": 'План урока',
         "en": 'Themes',
-        "ch": '',
+        "ch": '課程計劃',
         "ar": 'خطة الدرس',
     },
     "contents":{ //Начальные теги в уроках
@@ -240,10 +240,10 @@ const language={
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">The courses on the <a href="https://exam1.urfu.ru/">"Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)"</a>platform</a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">The courses on the <a href="https://elearn.urfu.ru">"Портал электронного обучения (Electronic Learning Portal)"</a>platform</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Knowledge check 😉</a></li>',
-        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();">Курсы на платформе <a href="https://openedu.ru/">«Открытое образование»</a> </a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Курсы на платформе <a href="https://exam1.urfu.ru/">«Центр независимой оценки результатов обучения»</a></a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Курсы на платформе <a href="https://elearn.urfu.ru">«Портал электронного обучения»</a></a></li>'+
-        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
+        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 平台上的课程 <a href="https://openedu.ru/">«Открытое образование»</a> </a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">平台上的课程 <a href="https://exam1.urfu.ru/">«Центр независимой оценки результатов обучения»</a></a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">平台上的课程 <a href="https://elearn.urfu.ru">«Портал электронного обучения»</a></a></li>'+
+        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();"> 知识测试 😉</a></li>',
         "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();">الدورات على منصة <a href="https://openedu.ru/">«Открытое образование»</a></a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">   الدورات على منصة <a href="https://exam1.urfu.ru/">«Центр независимой оценки результатов обучения»</a></a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">الدورات على منصة <a href="https://elearn.urfu.ru">«Портал электронного обучения»</a></a></li>'+
@@ -252,19 +252,19 @@ const language={
     "h2_0__p_0":{
         "ru": 'Итак, начался и учебный процесс и подошло время записи на курсы. Надеемся, ты выбирал их внимательно и осознанно. Сейчас мы расскажем тебе о том, что делать дальше.',
         "en": 'So, the academic process has begun and its time to register for courses. I hope you chose them carefully and consciously. Now we will tell you what to do next.',
-        "ch": '',
+        "ch": '因此，教育过程已经开始，注册课程的时间也到了。 我们希望您仔细、有意识地选择它们。 现在我们将告诉您下一步该做什么。',
         "ar": 'لذا، بدأ العملية التعليمية وحان الوقت للتسجيل في الدورات. نأمل أنك اخترتها بعناية وبوعي. الآن سنخبرك بما يجب فعله بعد ذلك',
     },
     "h2_1":{
         "ru": 'Курсы на платформе <a href="https://openedu.ru/"> «Открытое образование» </a>',
         "en": 'The courses on the  <a href="https://openedu.ru/"> "Открытое образование (Open Education)"</a> platform',
-        "ch": '',
+        "ch": '平台上的课程 <a href="https://openedu.ru/"> «Открытое образование» </a>',
         "ar": '<a href="https://openedu.ru/"> «Открытое образование» </a> الدورات على منصة',
     },
     "h2_1__p_0":{
         "ru": 'Если платформа для выполнения курса – «Открытое Образование», обрати внимание на то, какой университет является автором курса:',
         "en": 'If the platform for the course is Open Education: pay attention to which university is the author of the course:',
-        "ch": '',
+        "ch": '如果完成课程的平台是“Открытое образование”：注意课程的作者是哪所大学',
         "ar": ':"Открытое образование" إذا كانت المنصة التي تنفذ من خلالها الدورة هي انتبه إلى الجامعة التي تكون مؤلفة للدورة:',
     },
     "h2_1__ul_0":{
@@ -274,9 +274,9 @@ const language={
         "en": '<li>If its one of these guys: UrFU, MSU, MISiS, then you need to register for the course yourself</li>'+
         '<li>In the case of a course from HSE, you will receive an email to your mailbox with the domain @urfu.me</li>'+
         '<li>For all other courses, you will be enrolled automatically. Under no circumstances rush to do it yourself!</li>',
-        "ch": '<li></li>'+
-        '<li></li>'+
-        '<li></li>',
+        "ch": '<li> 如果是以下机构之一：UrFU、MSU、MISiS，那么您需要自己报名参加该课程</li>'+
+        '<li> 如果是国立研究大学 HSE 的课程，您将收到一封信，其电子邮件地址为@urfu.me</li>'+
+        '<li>  您将自行报名参加所有其他课程。 在任何情况下都不要急于自己动手！</li>',
         "ar": '<li>إذا كانت واحدة من هؤلاء: الجامعة الفيدرالية الأورالية، جامعة موسكو، جامعة العلوم والتقنية الوطنية، فعليك التسجيل في الدورة بنفسك</li>'+
         '<li>في حالة الدورة من الجامعة الحكومية للاقتصاد فسوف تتلقى رسالة على بريدك الإلكتروني من نطاق @urfu.me</li>'+
         'سيُسجلك في كل الدورات الأخرى بنفسهم. لا تسارع بالتسجيل بنفسك بأي حال من الأحوال!',
@@ -284,31 +284,31 @@ const language={
     "h2_1__p_1":{
         "ru": 'Проверить можно по <a href="https://inf-online.urfu.ru/ru/onlain-kursy/"> ссылке </a>. Если напротив названия твоего курса есть ссылка на него – регистрируйся самостоятельно. Иначе – терпеливо жди.',
         "en": 'You can check it on the <a href="https://inf-online.urfu.ru/ru/onlain-kursy/"> link</a>. If there is a link to your course next to its name, register yourself. Otherwise, patiently wait.',
-        "ch": '',
+        "ch": '您可以使用<a href="https://inf-online.urfu.ru/ru/onlain-kursy/"> 链接</a>进行检查。 如果您的课程名称旁边有一个链接，请自行注册。 否则请耐心等待。',
         "ar": 'بجانب اسم الدورة الخاصة بك - يمكنك التسجيل بنفسك. خلاف ذلك - انتظر بصبر <a href="https://inf-online.urfu.ru/ru/onlain-kursy/">رابطًا</a> يمكنك التحقق من الرابط. إذا وجدت',
     },
     "h2_1__ul_1":{
         "ru": '<li>И напоследок проверь, чтобы в графе «Моя группа:…» были указана либо «УрФУ_Весна/Осень*год*», либо твоя академическая группа</li>',
         "en": '<li>Finally, make sure that in the "My group: ..." section, either "UrFU_Spring/Fall*year*", or your academic group is indicated.</li>',
-        "ch": '<li> </li>',
+        "ch": '<li> 最后，确保在“我的小组：...”栏中注明“UrFU_Spring/Au​​tumn*year*”或您的学术小组</li>',
         "ar": '<li> وفي النهاية تحقق من وجود "مجموعتي: ..." في خانة الدورات. يجب أن يكون مكتوباً "الجامعة الفيدرالية الأورالية_ربيع/خريفالعام", أو مجموعتك الأكاديمية</li>',
     },
     "h2_1__p_2":{
         "ru": 'В случае каких-либо затруднений смело обращайся в техподдержку <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a>.',
         "en": 'If you encounter any difficulties, feel free to contact the support team at <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a>.',
-        "ch": '',
+        "ch": '如有任何困难，请随时联系技术支持 <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a>.',
         "ar": ' وفي حالة وجود أي مشاكل لا تتردد في الاتصال بالدعم التقني <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> ',
     },
     "h2_2":{
         "ru": 'Курсы на платформе <a class="inline-block" href="https://exam1.urfu.ru/"> «Центр независимой оценки результатов обучения» </a>',
         "en": 'The courses on the  <a class="inline-block" href="https://exam1.urfu.ru/">"Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)"</a> platform',
-        "ch": '',
+        "ch": '平台上的课程 <a class="inline-block" href="https://exam1.urfu.ru/"> «Центр независимой оценки результатов обучения» </a>',
         "ar": '<a class="inline-block" href="https://exam1.urfu.ru/"> «Центр независимой оценки результатов обучения» </a> الدورات على منصة',
     },
     "h2_2__p_0":{
         "ru": 'Если платформа для выполнения курса – «Центр независимой оценки результатов обучения»:',
-        "en": '',
-        "ch": '',
+        "en": 'If the platform for completing the course is the “Center for Independent Assessment of Learning Outcomes”:',
+        "ch": '如果完成课程的平台是“Центр независимой оценки результатов обучения”：',
         "ar": ':"Центр независимой оценки результатов обучения" إذا كانت المنصة التي تنفذ من خلالها الدورة هي',
     },
     "h2_2__ul_0":{
@@ -316,21 +316,21 @@ const language={
         '<li>Отображаться они будут слева в окошке «Навигация» в списке «Мои курсы»</li>',
         "en": '<li> You dont need to do anything yourself. You will be enrolled in all courses.</li>'+
         '<li>They will be displayed on the left in the "Navigation" window under "My Courses" list.</li>',
-        "ch": '<li> </li>'+
-        '<li> </li>',
+        "ch": '<li> 您不需要自己做任何事情。 您将报名参加所有课程 </li>'+
+        '<li>它们将显示在“导航”窗口左侧的“我的课程”列表中 </li>',
         "ar": '<li> لا يلزم عمل أي شيء بنفسك. سيُسجلك في كل الدورات</li>'+
         '<li> ستظهر لك في العمود الأيسر في قسم "التصفح" في قائمة "دوراتي"</li>',
     },
     "h2_3":{
         "ru": 'Курсы на платформе  <a class="inline-block" href="https://elearn.urfu.ru"> «Портал электронного обучения»</a>',
         "en": 'The courses on the <a class="inline-block" href="https://elearn.urfu.ru"> "Портал электронного обучения (Electronic Learning Portal)" </a> platform',
-        "ch": '',
+        "ch": '平台上的课程 <a class="inline-block" href="https://elearn.urfu.ru"> «Портал электронного обучения»</a>',
         "ar": '<a class="inline-block" href="https://elearn.urfu.ru"> «Портал электронного обучения»</a> الدورات على منصة ',
     },
     "h2_3__p_0":{
         "ru": 'Если платформа для выполнения курса – «Портал электронного обучения»:',
-        "en": '',
-        "ch": '',
+        "en": 'If the platform for completing the course – «Портал электронного обучения»:',
+        "ch": '如果完成课程的平台是“Портал электронного обучения”：',
         "ar": ':"Портал электронного обучения" إذا كانت المنصة التي تنفذ من خلالها الدورة هي',
     },
     "h2_3__ul_0":{
@@ -340,9 +340,9 @@ const language={
         "en": '<li>On the main page, find your institute, level of education, and training program in the "Course Categories" list.</li>'+
         '<li> Find the necessary course</li>'+
         '<li> Enter the password given by the instructor.</li>',
-        "ch": '<li></li>'+
-        '<li></li>'+
-        '<li></li>',
+        "ch": '<li>在主页上的“课程类别”列表中找到您的机构、培训级别和培训计划</li>'+
+        '<li>找到您需要的课程</li>'+
+        '<li>输入老师所说的密码</li>',
         "ar": '<li>ابحث في قائمة "فئات الدورات" على الصفحة الرئيسية عن معهدك ومستوى تأهيلك وبرنامجك التعليمي</li>'+
         '<li>ابحث عن الدورة المطلوبة</li>'+
         '<li>أدخل الكلمة الرمزية التي قالها المدرس</li>',
@@ -351,13 +351,13 @@ const language={
     "test":{ //test
         "ru": 'Тест',
         "en": 'Test',
-        "ch": '',
+        "ch": '测试3',
         "ar": 'امتحان',
     },
     "after_test":{ //тест
         "ru": 'Отлично! Теперь самое интересное – прохождение онлайн-курсов!',
         "en": 'Great! Now the most interesting part is to start taking online courses!',
-        "ch": '',
+        "ch": '伟大的！ 现在到了有趣的部分——参加在线课程！',
         "ar": '!عظيم! الآن يأتي الجزء الممتع – أخذ دورات عبر الإنترنت',
     },
 };
