@@ -55,28 +55,28 @@ const tests_any_lang={
             }],
         ch:[
             {
-                question: '',
-                answers: ['',
-                ''],
+                question: ' 学期已经过半了，你还没有开始网课。 你会怎么做？',
+                answers: ['我会尽快开始做！',
+                ' 我会在最后24 小时内完成所有事情。 速度是我的中间名！'],
                 correct: 1,
               },
               {
-                  question: '',
-                  answers: ['',
-                  '',
-                  ''],
+                  question: ' 在课程中你将：',
+                  answers: [' 阅读和听讲座并负责任地完成作业',
+                  '仅完成任务',
+                  ' 便宜无忧'],
                   correct: 1,
                 },
                 {
-                  question: '',
-                  answers: ['',
-                  '',],
+                  question: ' 获得足够的测试分数后，您：',
+                  answers: [' 你让一切保持原样。 何必再一次让自己紧张呢？',
+                  ' 您将完成整个课程。 积分越多越好！',],
                   correct: 2,
                 }],
             ar:[
                 {
                     question: '',
-                    answers: ['' ,
+                    answers: ['',
                     ''],
                     correct: 1,
                   },
@@ -213,7 +213,7 @@ const language={
     "to_lesson_6":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ru&">К шестому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=en&">To the sixth lesson!</a></button>',
-        "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ch&"繼續第六課！</a></button>',
+        "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ch&">繼續第六課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ar&">إلى الدرس السادس!</a></button>',
     },
     "to_lesson_7":{ //ссылка на урок
@@ -225,13 +225,13 @@ const language={
     "h1_0":{ //Начальные теги в уроках
         "ru": 'Фишки онлайн-курсов',
         "en": 'Tips for Online Courses',
-        "ch": '',
+        "ch": '线上课程的技巧',
         "ar": '',
     },
     "h2_0":{ //Начальные теги в уроках
         "ru": 'План урока',
         "en": 'Themes',
-        "ch": '',
+        "ch": '課程計劃',
         "ar": '',
     },
     "contents":{ //Начальные теги в уроках
@@ -241,9 +241,9 @@ const language={
         "en": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> How to manage to do everything?</a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">How to successfully complete an online course?</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Knowledge check 😉</a></li>',
-        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
-        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
+        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 如何管理一切？ </a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">如何成功完成在线课程？</a></li>'+
+        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">知识测试😉</a></li>',
         "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
@@ -251,19 +251,19 @@ const language={
     "h2_0__p_0":{ 
         "ru": 'Настало время решать онлайн-курсы! Может показаться, что это легко и стараться не нужно. Однако это совсем не так. В этом уроке мы дадим тебе несколько советов, как успешно пройти обучение.',
         "en": 'Its time to tackle online courses! It may seem easy and like you dont have to try hard. However, thats not the case at all. In this lesson, we will give you some tips on how to successfully complete your studies.',
-        "ch": '',
+        "ch": '是时候解决在线课程了！ 看起来似乎很容易，没有必要去尝试。 然而，事实并非如此。 在本课程中，我们将为您提供一些有关如何成功完成培训的提示。',
         "ar": '',
     },
     "h2_1":{ 
         "ru": 'Как всё успеть?',
         "en": 'How to manage to do everything?',
-        "ch": '',
+        "ch": '如何管理一切？',
         "ar": '',
     },
     "h2_1__p_0":{ 
         "ru": 'Составь себе примерное расписание выполнения курса:',
         "en": 'Create yourself a rough schedule for completing the course:',
-        "ch": '',
+        "ch": '为自己制定一个完成课程的粗略时间表：',
         "ar": '',
     },
     "h2_1__ul_0":{ 
@@ -275,10 +275,10 @@ const language={
         '<li>The course is divided into sections, which will help you regulate completion</li>'+
         '<li>Dont leave everything until the last day! Its very difficult to do everything at once</li>'+
         '<li>Pay close attention to deadlines. Usually, the entire course closes at once, but it may also happen that each section has its own deadline. Dont lose points!</li>',
-        "ch": '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>',
+        "ch": '<li>分配足够的时间，例如，每周或每两周完成任务</li>'+
+        '<li>本课程分为多个部分，这将帮助您管理实施</li>'+
+        '<li>不要把所有事情都推迟到最后一天！ 一次做完所有事情是非常困难的</li>'+
+        '<li> 密切注意最后期限。 通常整个课程同时结束，但也可能每个部分都有自己的截止日期。 不要丢分！</li>',
         "ar": '<li></li>'+
         '<li></li>'+
         '<li></li>'+
@@ -287,13 +287,13 @@ const language={
     "h2_2":{ 
         "ru": 'Как успешно пройти онлайн-курс?',
         "en": 'How to successfully complete an online course?',
-        "ch": '',
+        "ch": '如何成功完成在线课程？',
         "ar": '',
     },
     "h2_2__p_0":{ 
         "ru": 'Будь внимателен при выполнении:',
         "en": 'Be attentive when completing:',
-        "ch": '',
+        "ch": '做时要小心：',
         "ar": '',
     },
     "h2_2__ul_0":{ 
@@ -305,10 +305,10 @@ const language={
         '<li>The lecture material is useful not only for course assignments but also for the final test. We recommend fixing the theory in some form.</li>'+
         '<li>Note that some tasks have only a few attempts. Therefore, do not rush under any circumstances.</li>'+
         '<li>If the course is being conducted on the "Открытое образование (Open Education)" platform, there is a "Progress" tab in the course section, which contains information about how many points you need to score for credit and what points you can get for certain assignments.</li>',
-        "ch": '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>',
+        "ch": '<li> 在线课程既可以是教师课程的补充，也可以是成熟的学科，因此我们强烈建议您尽可能负责任地对待它</li>'+
+        '<li> 讲座材料不仅可用于课程作业，还可用于最终测试。 我们建议您以某种形式记录该理论。</li>'+
+        '<li>请注意，某些任务只能尝试几次。 因此，任何情况下都不要着急。</li>'+
+        '<li> 如果课程在“开放教育”平台上进行，则课程部分有一个“进度”选项卡，其中包含有关您需要获得多少学分以及可以完成某些任务的信息</li>',
         "ar": '<li></li>'+
         '<li></li>'+
         '<li></li>'+
@@ -317,20 +317,20 @@ const language={
     "h2_2__p_1":{ 
         "ru": 'Более подробную информацию о системе оценивания мы расскажем через урок.',
         "en": 'We will provide more detailed information about the assessment system during the lesson.',
-        "ch": '',
+        "ch": '我们将通过课程提供有关评估系统的更多详细信息。',
         "ar": '',
     },
 
     "test":{ //test
         "ru": 'Тест',
         "en": 'Test',
-        "ch": '',
+        "ch": '测试4',
         "ar": '',
     },
     "after_test":{ //тест
         "ru": 'Класс! Теперь ты знаешь, как с лёгкостью пройти онлайн-курс. Настало время для самого <span style="text-decoration: line-through;">страшного</span> главного – проверки полученных знаний.',
         "en": 'Great! Now you know how to easily pass the online course. Its time for the most frightening important part - checking the acquired knowledge.',
-        "ch": '',
+        "ch": '班级！ 现在您知道如何轻松完成在线课程了。 最重要的事情已经到了——测试所获得的知识。',
         "ar": '',
     },
 };
