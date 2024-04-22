@@ -155,7 +155,7 @@ const language={
         "ru": '<div class="card-body"><h5 class="card-title">Регистрация почты УрФУ</h5><p class="card-text">Как завести личный кабинет студента и корпоративную почту</p><a href="'+lesson_1+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
         "en": '<div class="card-body"><h5 class="card-title">Registration of URFU Mail</h5><p class="card-text">How to create a personal student account and corporate email</p><a href="'+lesson_1+'?lang=en&" class="btn btn-success">Get start!</a></div>',
         "ch": '<div class="card-body"><h5 class="card-title">UrFU邮件注册</h5><p class="card-text">如何创建学生个人帐户和企业邮件</p><a href="'+lesson_1+'?lang=ch&" class="btn btn-success">去第一課</a></div>',
-        "ar": '<div class="card-body">تسجيل البريد الإلكتروني لجامعة الفيدرالية الأورالية<h5 class="card-title"></h5><p class="card-text">كيفية إنشاء حساب طالب وبريد إلكتروني للشركة/p><a href="'+lesson_1+'?lang=ar&" class="btn btn-success">إلى الدرس الأول!</a></div>',
+        "ar": '<div class="card-body"><h5 class="card-title"> تسجيل البريد الإلكتروني لجامعة الفيدرالية الأورالية</h5><p class="card-text">كيفية إنشاء حساب طالب وبريد إلكتروني للشركة</p><a href="'+lesson_1+'?lang=ar&" class="btn btn-success">إلى الدرس الأول!</a></div>',
     },
     "card_link_2_lesson":{
         "ru": '<div class="card-body"><h5 class="card-title">Регистрация на платформах</h5><p class="card-text">Как зарегистрироваться на платформах проведения онлайн-курсов</p><a href="'+lesson_2+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
@@ -191,7 +191,7 @@ const language={
         "ru": '<div class="card-body"><h5 class="card-title">Про пересдачи</h5><p class="card-text">Как закрыть долги и пересдать онлайн-курс</p><a href="'+lesson_7+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
         "en": '<div class="card-body"><h5 class="card-title">Regarding Retakes</h5><p class="card-text">How to clear debts and retake online courses</p><a href="'+lesson_7+'?lang=en&" class="btn btn-success">Get start!</a></div>',
         "ch": '<div class="card-body"><h5 class="card-title">關於重考</h5><p class="card-text">這是一個簡短的描述</p><a href="'+lesson_7+'?lang=ch&" class="btn btn-success">去！</a></div>',
-        "ar": '<div class="card-body"><h5 class="card-title">بخصوص إعادة الامتحانات</h5><p class="card-text">وهنا وصف قصير</p><a href="'+lesson_7+'?lang=ar&" class="btn btn-success">يذهب!</a></div>',
+        "ar": '<div class="card-body"><h5 class="card-title">حول عمليات إعادة التسجيل</h5><p class="card-text">كيفية إغلاق الديون وإعادة الدورة التدريبية عبر الإنترنت</p><a href="'+lesson_7+'?lang=ar&" class="btn btn-success">يذهب!</a></div>',
     },
     "card_main_page__h1_lessons":{ 
         "ru": 'Уроки и курсы <span id="to_lessons"></span>',
