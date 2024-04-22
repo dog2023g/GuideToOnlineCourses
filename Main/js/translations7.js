@@ -1,17 +1,17 @@
-var toMain='https://dog2023g.github.io/GuideToOnlineCourses/Main/index.html';
-var lessons='https://dog2023g.github.io/GuideToOnlineCourses/Main/index.html';
+var toMain='/Main/index.html';
+var lessons='/Main/index.html';
 var aboutUs=window.location.href.split(/[#?]+/)[0];
 var openedu='https://openedu.ru/?ysclid=luha0dkctv671818426';
 var elern='https://elearn.urfu.ru/';
 var exam1='https://exam1.urfu.ru/';
 var exam2='https://exam2.urfu.ru/';
-var lesson_1='https://dog2023g.github.io/GuideToOnlineCourses/Main/lesson1.html';
-var lesson_2='https://dog2023g.github.io/GuideToOnlineCourses/Main/lesson2.html';
-var lesson_3='https://dog2023g.github.io/GuideToOnlineCourses/Main/lesson3.html';
-var lesson_4='https://dog2023g.github.io/GuideToOnlineCourses/Main/lesson4.html';
-var lesson_5='https://dog2023g.github.io/GuideToOnlineCourses/Main/lesson5.html';
-var lesson_6='https://dog2023g.github.io/GuideToOnlineCourses/Main/lesson6.html';
-var lesson_7='https://dog2023g.github.io/GuideToOnlineCourses/Main/lesson7.html';
+var lesson_1='/Main/lesson1.html';
+var lesson_2='/Main/lesson2.html';
+var lesson_3='/Main/lesson3.html';
+var lesson_4='/Main/lesson4.html';
+var lesson_5='/Main/lesson5.html';
+var lesson_6='/Main/lesson6.html';
+var lesson_7='/Main/lesson7.html';
 const tests_any_lang={ 
     ru:[
     {
