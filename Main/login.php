@@ -100,6 +100,7 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
         text-align:center;
         font-size:90%;
     }
+    
     #menu a{
         padding:7px 20px 9px 20px;
         background-color:#005bff;
@@ -128,7 +129,8 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
     <body>
     <div id="menu">
     <form action="login.php" id ="myform" method="POST">
-    <select name="pagename">');
+    <select name="pagename">
+    ');
 
     $filelist1 = glob("*.html");
     $ddd=0;
@@ -162,10 +164,13 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
     <a href="login.php?mode=5">.html</a>
     <a href="login.php?mode=8">.css/.js</a>
     <a href="login.php">предпросмотр</a>
+    <a href="newlesson.php" class="add-lesson">добавить урок</a>
+    <a href= "/konstruktor/'.$pagename.'" class="constructor">конструктор</a>
     <a href="index.html" target="_blank">на сайт</a>
     </div>
     ');
 
+    
 
 
     if($_GET['mode']=='7'){
@@ -180,7 +185,7 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
             } else{echo("Картинка не загружена");};
             echo("</div>"); 
         };
-
+       
         $mycss = array();
         $cssreg = "/[\"']((.*\\/\\/|)([\\/a-z0-9_%]+\\.(css)))[\"']/";
         preg_match_all($cssreg , $template , $cssmas );
@@ -208,6 +213,12 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
                 echo("</div>");
             };
         };
+        echo('<div>');
+        echo('<form enctype="multipart/form-data" action="login.php?mode=11" method="POST">');
+        echo('<input type="file" name="image" required>');
+        echo('<input type="submit" value="Загрузить картинку">');
+        echo('</form>');
+        echo('</div>');
     };
       
     
@@ -248,11 +259,64 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
     };
     
 
+    if ($_GET['mode'] == '11') {
+        // Путь для сохранения загруженных файлов
+        $uploadDirectory = 'img/';
+
+        // Обработка загруженной картинки
+        $targetFile = $uploadDirectory . basename($_FILES['image']['name']);
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
+            // Получаем относительный путь к загруженной картинке
+            $relativePath = 'img/' . basename($_FILES['image']['name']);
+
+            // Загружаем содержимое файла страницы
+            $pageContent = file_get_contents($pagename);
+
+            // Находим позицию, перед которой нужно вставить картинку
+            $position = strpos($pageContent, '<div class="img');
+            if ($position !== false) {
+                // Генерируем HTML-код для вставки картинки на страницу
+                $imageHtml = '<div><img src="'.$relativePath.'" alt=""></div>';
+
+                // Вставляем HTML-код с картинкой перед указанным элементом
+                $updatedPageContent = substr_replace($pageContent, $imageHtml, $position, 0);
+
+                // Сохраняем обновленное содержимое страницы
+                file_put_contents($pagename, $updatedPageContent);
+
+                // Выводим сообщение об успешной загрузке
+                echo 'Картинка была успешно загружена и добавлена на страницу.';
+            } else {
+                echo 'Не удалось найти место для вставки картинки.';
+            }
+        } else {
+            echo 'Ошибка при загрузке картинки.';
+        }
+    };
+
+    function getTranslationsFileName($pagename) {
+    // Извлекаем номер урока из имени файла
+        preg_match('/lesson(\d+)\.html/', $pagename, $matches);
+        if (!empty($matches[1])) {
+            $lessonNumber = intval($matches[1]);
+            return "js/translations{$lessonNumber}.js";
+        } else {
+            // Если не удалось извлечь номер, возвращаем общий файл translations.js
+            return "js/translations.js";
+        }
+    }
+
+    
+    $translationsFile = getTranslationsFileName($pagename);
+
+    
+    $translationsContent = file_get_contents($translationsFile);
+
 
 
     if($_GET['mode']=='0'){
 
-        $ff=array(); $content=preg_replace('/<[^>]+>/', '^', $template);$teksta=explode('^',$content);
+        $ff=array(); $content=preg_replace('/<[^>]+>/', '^', $translationsContent);$teksta=explode('^',$content);
         for($j=0;$j<count($teksta);$j++){if(strlen(trim($teksta[$j]))>1) $ff[]=(trim($teksta[$j]));};
         for($j=0;$j<count($ff);$j++){
             echo('<a href="login.php?mode=3&j='.$j.'" class="mytext"><pre>'.$ff[$j].'</pre></a>');
@@ -264,7 +328,7 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
 
     if($_GET['mode']=='3'){
 
-        $ff=array(); $content=preg_replace('/<[^>]+>/','^',$template); $teksta=explode('^',$content);
+        $ff=array(); $content=preg_replace('/<[^>]+>/','^',$translationsContent); $teksta=explode('^',$content);
         for($j=0;$j<count($teksta);$j++){ if(strlen(trim($teksta[$j]))>1) $ff[]=(trim($teksta[$j]));};
         $jj=$_GET['j'];
         $tektekst=$ff[$jj];
@@ -287,7 +351,7 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
 
     if($_GET['mode']=='4'){
 
-        $ff=array(); $content=preg_replace('/<[^>]+>/', '^', $template); $teksta=explode('^',$content);
+        $ff=array(); $content=preg_replace('/<[^>]+>/', '^', $translationsContent); $teksta=explode('^',$content);
         for($j=0;$j<count($teksta);$j++){ if(strlen(trim($teksta[$j]))>1) $ff[]=(trim($teksta[$j]));};
         $jj =$_GET['j'];
         $tektekst = $ff[$jj];
@@ -295,7 +359,7 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
         for($j=0;$j<$jj;$j++){
             $kol=$kol+substr_count($ff[$j], $tektekst);
         };
-        $subject=file_get_contents($pagename);
+        $subject=file_get_contents($translationsFile);
         function str_replace_nth($search, $replace, $subject, $nth)
         {
             $found = preg_match_all('/'.preg_quote($search).'/', $subject, $matches, PREG_OFFSET_CAPTURE);
@@ -305,7 +369,7 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
             return $subject;
         };
         $rez=str_replace_nth($tektekst, $_POST['mytext'], $subject, $kol-1);
-        file_put_contents($pagename, $rez);
+        file_put_contents($translationsFile, $rez);
         echo "<br><br><center>Текст был успешно изменен.<p><a href = 'login.php?mode=0'>Вернуться к списку текстов</a><p>Обновите страницу";
     };
         
