@@ -117,11 +117,23 @@ const language={
         "ch": '<a class="nav-link" href="'+aboutUs+'?lang=ch&#footer">關於我們</a>',
         "ar": '<a class="nav-link" href="'+aboutUs+'?lang=ar&#footer">معلومات عنا</a>'
     },
-    "search":{ //навигационная панель
-        "ru": '<input class="form-control me-2" type="search" placeholder="Например: Exam2" aria-label="Search"><button class="btn btn-outline-success" type="submit">Найти</button>',
-        "en": '',
-        "ch": '',
-        "ar": ''
+    "searchForm":{ //навигационная панель
+        "ru": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="Например: Exam2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">Найти</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
+        "en": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="For example: Exam2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">Find</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
+        "ch": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="例如：考試2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">尋找</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
+        "ar": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="على سبيل المثال: الامتحان 2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">يجد</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
     },
     "link_openedu":{ //футер
         "ru": '<a class="nav-link" href="'+openedu+'">OpenEdu (Открытое образование)</a>',
