@@ -41,10 +41,10 @@ const tests_any_lang={
               },],
             ar:[
                 {
-                    question: '',
-                    answers: ['',
-                    '',
-                ''],
+                    question: 'أنت لا تدرك كيف حصلت على هذه الدرجة في الدورة، لأن هذا ليس ما كنت تتوقعه. ما الذي ستفعله؟',
+                    answers: ['إعادة النظر في المعاملات في نظام التقييم، والنظر في نظام تقدير الدرجات للمقررات عبر الإنترنت',
+                    'الاعتراض على من أعطى مثل هذه الدرجات',
+                'الإبلاغ عن خطأ'],
                     correct: 1,
                   },]
     };
@@ -74,11 +74,23 @@ const language={
         "ch": '<a class="nav-link" href="'+aboutUs+'?lang=ch&#footer">關於我們</a>',
         "ar": '<a class="nav-link" href="'+aboutUs+'?lang=ar&#footer">معلومات عنا</a>'
     },
-    "search":{ //навигационная панель
-        "ru": '<input class="form-control me-2" type="search" placeholder="Например: Exam2" aria-label="Search"><button class="btn btn-outline-success" type="submit">Найти</button>',
-        "en": '',
-        "ch": '',
-        "ar": ''
+    "searchForm":{ //навигационная панель
+        "ru": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="Например: Exam2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">Найти</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
+        "en": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="For example: Exam2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">Find</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
+        "ch": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="例如：考試2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">尋找</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
+        "ar": '<label for="searchInput"></label>'+
+        '<input class="form-control me-2" type="search" placeholder="على سبيل المثال: الامتحان 2" id="searchInput" name="searchInput">'+
+        '<button class ="btn btn-outline-success" type="submit">يجد</button>'+
+        '<ul id="searchResultsDropdown" class="search-results-dropdown"></ul>',
     },
     "link_openedu":{ //футер
         "ru": '<a class="nav-link" href="'+openedu+'">OpenEdu (Открытое образование)</a>',
@@ -180,13 +192,13 @@ const language={
         "ru": 'Перевод баллов',
         "en": 'Score Conversion',
         "ch": '',
-        "ar": '',
+        "ar": 'تحويل النقاط',
     },
     "h2_0":{ //Начальные теги в уроках
         "ru": 'План урока',
         "en": 'Themes',
         "ch": '',
-        "ar": '',
+        "ar": 'خطة الدرس',
     },
     "contents":{ //Начальные теги в уроках
         "ru": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();">Смешанные курсы </a></li>'+
@@ -198,39 +210,39 @@ const language={
         "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
-        "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Как завести личный кабинет УрФУ? </a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Как получить доступ к office.com и своей почте?</a></li>'+
-        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
+        "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 	المقررات الدراسية المدمجة </a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">	المقررات الدراسية على منصة التعليم المفتوح</a></li>'+
+        '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">	التحقق من المعرفةالمقررات الدراسية المدمجة 😉</a></li>',
     },
     "h2_0__p_0":{ 
         "ru": 'Надеемся, ты справился с тестированием. Теперь ты узнаешь, как полученные тобой баллы за курс будут перенесены в БРС.',
         "en": 'We hope you did well on the test. Now you will learn how the scores you received for the course will be transferred to the students academic record.',
         "ch": '',
-        "ar": '',
+        "ar": 'نأمل أن تكون قد أبليت بلاءً حسناً في الاختبار. والآن ستتعرف على كيفية تحويل درجاتك في المقرر الدراسي إلى المعدل التراكمي.',
     },
     "h2_1":{ 
         "ru": 'Смешанные курсы',
         "en": 'Mixed courses',
         "ch": '',
-        "ar": '',
+        "ar": 'المقررات الدراسية المدمجة',
     },
     "h2_1__p_0":{ 
         "ru": 'Курсы предметов смешанного формата переводятся согласно коэффициентам в <a href="https://istudent.urfu.ru/s/servis-informirovaniya-studenta-o-ballah-brs"> БРС</a>. Причём прогресс и экзамен идут отдельно друг от друга.',
         "en": 'Courses in a mixed format are converted according to coefficients in the <a href="https://istudent.urfu.ru/s/servis-informirovaniya-studenta-o-ballah-brs">  BRS </a> (Point-Rating system). Progress and exams are separate from each other.',
         "ch": '',
-        "ar": '',
+        "ar": ' <a href="https://istudent.urfu.ru/s/servis-informirovaniya-studenta-o-ballah-brs"> БРС</a>  يتم نقل المقررات الدراسية للمواد ذات التنسيق المختلط وفقًا للمعاملات في  نظام تصنيف النقاط.  والتقدم والامتحان منفصلان عن بعضهما البعض.',
     },
     "h2_2":{ 
         "ru": 'Курсы на платформе «Открытое образование»',
         "en": 'Courses on the "Открытое образование (Open Education)" platform',
         "ch": '',
-        "ar": '',
+        "ar": 'الدورات التدريبية على المنصة "openedu"',
     },
     "h2_2__p_0":{ 
         "ru": 'Онлайн-курсы как отдельный самостоятельный предмет, переводятся следующим образом:',
         "en": 'Online courses as a separate independent subject are transferred as follows:',
         "ch": '',
-        "ar": '',
+        "ar": 'تُترجم الدورات التدريبية عبر الإنترنت، كدورة منفصلة قائمة بذاتها، على النحو التالي:',
     },
     "h2_2__ul_0":{ 
         "ru": '<li> В БРС нет разделения на экзамен и прогресс</li>'+
@@ -245,40 +257,40 @@ const language={
         '<li> </li>'+
         '<li> </li>'+
         '<li> </li>',
-        "ar": '<li> </li>'+
-        '<li> </li>'+
-        '<li> </li>'+
-        '<li> </li>',
+        "ar": '<li>لا يوجد فصل بين الامتحان والتقدم في نظام تصنيف النقاط </li>'+
+        '<li>يتم نقل المقررات الدراسية من UrFU مع عرض التقديرات بالضبط مع عرض الدرجات </li>'+
+        '<li>يتم أيضًا نقل المقررات ذات نظام الدرجات المطابق تمامًا مع الدرجات المعروضة. </li>'+
+        '<li>يتم نقل المقررات الدراسية من الجامعات الشريكة ذات أنظمة التقدير غير المتطابقة وفقًا للمعادلة:</li>',
     },
     "h2_2__p_1":{ 
         "ru": 'Где Бу – балл по 100-бальной шкале УрФУ',
         "en": 'Где Бу – score on the 100-point scale of Ural Federal University',
         "ch": '',
-        "ar": '',
+        "ar": 'حيث Бу هي الدرجة على مقياس 100 نقطة لوحدة قياس مؤشر أورفو',
     },
     "h2_2__p_2":{ 
         "ru": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бп – балл по 100-бальной шкале вуза-партнера',
         "en": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бп – score on the 100-point scale of partner university',
         "ch": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Бп - الدرجة على مقياس من 100 نقطة للجامعة الشريكة',
     },
     "h2_2__p_3":{ 
         "ru": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нп – значение нижней границы диапазона, соответствующего определённой оценке по   5-балльной шкале вуза-партнера',
         "en": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Нп – value of the lower boundary of the range corresponding to a particular grade on the 5-point scale of the partner university',
         "ch": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Нп - قيمة الحد الأدنى للنطاق المقابل لدرجات معينة على مقياس من 5 نقاط للجامعة الشريكة',
     },
     "h2_2__p_4":{ 
         "ru": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ну – значение нижней границы диапазона, соответствующего определённой оценке по   5-балльной шкале УрФУ',
         "en": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ну – value of the lower boundary of the range corresponding to a particular grade on the 5-point scale of Ural Federal University',
         "ch": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ну - قيمة الحد الأدنى للنطاق المقابل لدرجات معينة على مقياس من 5 نقاط للجامعة الشريكة.',
     },
     "h2_2__p_5":{ 
         "ru": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; КЗп – количество значений в диапазоне, соответствующего той же оценке по  5-балльной шкале вуза-партнера',
         "en": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;КЗп – number of values in the range corresponding to the same grade on the 5-point scale of the partner university',
         "ch": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+        "ar": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; КЗп - عدد القيم في النطاق المقابل لنفس الدرجة على مقياس من 5 نقاط للجامعة الشريكة.',
     },
     "h2_2__p_6":{ 
         "ru": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; КЗп – количество значений в диапазоне, соответствующего той же оценке по  5-балльной шкале УрФУ',
@@ -299,12 +311,12 @@ const language={
         "ru": 'Тест',
         "en": 'Test',
         "ch": '',
-        "ar": '',
+        "ar": 'الاختبار 6',
     },
     "after_test":{ //тест
         "ru": 'Отлично! Теперь пора приступать к следующему уроку!',
         "en": 'Great! Now its time to move on to the next lesson!',
         "ch": '',
-        "ar": '',
+        "ar": 'عظيم! الآن حان الوقت لبدء الدرس التالي!',
     },
 };
