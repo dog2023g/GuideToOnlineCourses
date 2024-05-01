@@ -142,9 +142,9 @@ const language={
     },
     "footer_about_us_p1":{ //футер
         "ru": 'Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов',
-        "en": 'Lets tell you a little about ourselves. Our team "Freedom Seals" was created in 2023 to create cool software products',
-        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「Freedom Seals」成立於 2023 年，致力於創造酷炫的軟體產品',
-        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "Freedom Seals" في عام 2023 لإنشاء منتجات برمجية رائعة',
+        "en": 'Lets tell you a little about ourselves. Our team "RadioSeals" was created in 2023 to create cool software products',
+        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「RadioSeals」成立於 2023 年，致力於創造酷炫的軟體產品',
+        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "RadioSeals" في عام 2023 لإنشاء منتجات برمجية رائعة',
     },
     "to_lesson_1":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К первому уроку!</a></button>',
@@ -153,7 +153,7 @@ const language={
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ar&">إلى الدرس الأول!</a></button>',
     },
     "to_lesson_2":{ //ссылка на урок
-        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">К второму уроку!</a></button>',
+        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">Ко второму уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=en&">To the second lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ch&">繼續第二課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ar&">إلى الدرس الثاني!</a></button>',
