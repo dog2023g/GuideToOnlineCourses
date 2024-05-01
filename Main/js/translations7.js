@@ -22,7 +22,7 @@ const tests_any_lang={
     },
     {
         question: '2. НТК не пройден, а электронного письма с разъяснением нет. Что делать?',
-        answers: ['Писать в техподдержку exam1@urfu.ru',
+        answers: ['Писать в техподдержку <a href="mailto:exam1@urfu.ru"> exam1@urfu.ru</a> ',
         'Надеяться на лучшее',],
         correct: 1,
       },
@@ -41,7 +41,7 @@ const tests_any_lang={
           },
           {
               question: '2. The final assessment was not passed, and there is no email with an explanation. What to do?',
-              answers: ['Write to the tech support at exam1@urfu.ru',
+              answers: ['Write to the tech support at <a href="mailto:exam1@urfu.ru"> exam1@urfu.ru</a>',
               'Hope for the best',],
               correct: 1,
             },
@@ -60,7 +60,7 @@ const tests_any_lang={
               },
               {
                   question: 'НТК 没有通过，也没有电子邮件说明。怎么办？',
-                  answers: ['致函技术支持 exam1@urfu.ru',
+                  answers: ['致函技术支持 <a href="mailto:exam1@urfu.ru"> exam1@urfu.ru</a>',
                   '希望一切顺利',],
                   correct: 1,
                 },
@@ -79,7 +79,7 @@ const tests_any_lang={
                   },
                   {
                       question: '2  لم يتم اجتياز الاختبار ولم يتم إرسال بريد إلكتروني مع توضيح. ما العمل؟',
-                      answers: ['	اكتب إلى الدعم الفني exam1@urfu.ru',
+                      answers: ['	اكتب إلى الدعم الفني <a href="mailto:exam1@urfu.ru"> exam1@urfu.ru</a>',
                       '	نأمل في الأفضل',],
                       correct: 1,
                     },
@@ -184,9 +184,9 @@ const language={
     },
     "footer_about_us_p1":{ //футер
         "ru": 'Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов',
-        "en": 'Lets tell you a little about ourselves. Our team "Freedom Seals" was created in 2023 to create cool software products',
-        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「Freedom Seals」成立於 2023 年，致力於創造酷炫的軟體產品',
-        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "Freedom Seals" في عام 2023 لإنشاء منتجات برمجية رائعة',
+        "en": 'Lets tell you a little about ourselves. Our team "RadioSeals" was created in 2023 to create cool software products',
+        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「RadioSeals」成立於 2023 年，致力於創造酷炫的軟體產品',
+        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "RadioSeals" في عام 2023 لإنشاء منتجات برمجية رائعة',
     },
     "to_lesson_1":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К первому уроку!</a></button>',
@@ -195,7 +195,7 @@ const language={
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ar&">إلى الدرس الأول!</a></button>',
     },
     "to_lesson_2":{ //ссылка на урок
-        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">К второму уроку!</a></button>',
+        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">Ко второму уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=en&">To the second lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ch&">繼續第二課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ar&">إلى الدرس الثاني!</a></button>',
@@ -232,7 +232,7 @@ const language={
     },
     "h1_0":{ //Начальные теги в уроках
         "ru": 'Про пересдачи',
-        "en": 'Registration of URFU Mail',
+        "en": 'Regarding Retakes',
         "ch": '关于重修',
         "ar": 'حول عمليات إعادة التسجيل',
     },
@@ -243,21 +243,21 @@ const language={
         "ar": 'خطة الدرس',
     },
     "contents":{ //Начальные теги в уроках
-        "ru": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();">Пересдача курсов на платформе «Центр независимой оценки результатов обучения»</a></li>'+
-               '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Задолженность по онлайн-курсам на платформе «Открытое образование»</a></li>'+
-               '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Пересдача итогового контроля на платформе «Открытое образование»</a></li>'+
+        "ru": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();">Пересдача курсов на платформе <a href="https://exam1.urfu.ru/"> «Центр независимой оценки результатов обучения»</a></a></li>'+
+               '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Задолженность по онлайн-курсам на платформе <a href="https://openedu.ru/"> «Открытое образование» </a></a></li>'+
+               '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Пересдача итогового контроля на платформе <a href="https://openedu.ru/">«Открытое образование»</a></li>'+
                '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Проверка знаний 😉</a></li>',
-        "en": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Retaking courses on the " Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)" platform</a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Outstanding debts for online courses on the "Открытое образование (Open Education)" platform</a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Retaking final exams on the "Открытое образование (Open Education)" platform</a></li>'+
+        "en": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> Retaking courses on the <a href="https://exam1.urfu.ru/">" Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)"</a> platform</a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">Outstanding debts for online courses on the <a href="https://openedu.ru/">"Открытое образование (Open Education)"</a> platform</a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">Retaking final exams on the <a href="https://openedu.ru/">"Открытое образование (Open Education)"</a> platform</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">Knowledge check 😉</a></li>',
-        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 修订 "学习成果独立评估中心 "平台上的课程 </a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">开放教育平台在线课程拖欠款 </a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">在开放教育平台上重新提交最终控制成果</a></li>'+
+        "ch": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 修订 "学习成果独立评估中心 "平台上的课程 <a href="https://exam1.urfu.ru/">" Центр независимой оценки результатов обучения (Center for Independent Assessment of Learning Outcomes)"</a></a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">开放教育平台在线课程拖欠款 <a href="https://openedu.ru/">"Открытое образование (Open Education)"</a></a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">在开放教育平台上重新提交最终控制成果 <a href="https://openedu.ru/">"Открытое образование (Open Education)"</a></a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">知识测试 😉</a></li>',
-        "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 	إعادة تقديم المقررات الدراسية على منصة "exam1" </a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">متأخرات المقررات الدراسية عبر الإنترنت على منصة "openedu"</a></li>'+
-        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">	إعادة تقديم الرقابة النهائية على منصة "openedu"</a></li>'+
+        "ar": '<li> <a class="page_lesson_contents" href="#h2_1" onclick="reloadPageForContents();"> 	إعادة تقديم المقررات الدراسية على منصة <a href="https://exam1.urfu.ru/">"exam1"</a> </a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">متأخرات المقررات الدراسية عبر الإنترنت على منصة <a href="https://openedu.ru/"> "openedu"</a></a></li>'+
+        '<li><a class="page_lesson_contents" href="#h2_3" onclick="reloadPageForContents();">	إعادة تقديم الرقابة النهائية على منصة  <a href="https://openedu.ru/">"openedu"</a></a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">	التحقق من المعرفة 😉</a></li>',
     },
     "h2_0__p_0":{ 
@@ -287,7 +287,7 @@ const language={
     "h2_2":{ 
         "ru": 'Задолженность по онлайн-курсам на платформе «Открытое образование»',
         "en": 'Outstanding debts for online courses on the "Открытое образование (Open Education)" platform',
-        "ch": 'opened.ru" 平台上积压的在线课程 ',
+        "ch": '"openedu" 平台上积压的在线课程 ',
         "ar": 'متأخرات الدورات التدريبية عبر الإنترنت على المنصة "openedu"',
     },
     "h2_2__p_0":{ 
@@ -298,29 +298,29 @@ const language={
     },
     "h2_2__ul_0":{ 
         "ru": '<li>Записаться на актуальный запуск курса в новом семестре </li>'+
-        '<li>Написать по адресу openedu@urfu.ru письмо с просьбой добавить тебя в группу должников для предоставления полного доступа к курсу </li>'+
+        '<li>Написать по адресу <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> письмо с просьбой добавить тебя в группу должников для предоставления полного доступа к курсу </li>'+
         '<li>Набрать проходные баллы по каждому из разделов, кроме итогового контроля </li>'+
         '<li> Подать заявку на открытие доступа для прохождения итогового контроля. После обработки заявки на электронную почту придет уведомление, когда можно приступить к прохождению итогового контроля.</li>'+
         '<li>Записаться на прохождение итогового контроля с прокторингом и пройти его без нарушений. </li>'+
-        '<li> Написать письмо на openedu@urfu.ru и попросить зафиксировать результат и загрузить его в БРС.</li>',
+        '<li> Написать письмо на <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> и попросить зафиксировать результат и загрузить его в БРС.</li>',
         "en": '<li>Enroll in the current course launch in the new semester </li>'+
-        '<li> Write an email to openedu@urfu.ru requesting to be added to the debtors group to provide full access to the course</li>'+
+        '<li> Write an email to <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> requesting to be added to the debtors group to provide full access to the course</li>'+
         '<li>Achieve a passing score in each section, except for the final exam </li>'+
         '<li>Submit a request for access to take the final exam. After processing the request, you will receive a notification via email when you can start taking the final exam. </li>'+
         '<li>Sign up to take the final exam with proctoring and pass it without any violations. </li>'+
-        '<li>Write an email to openedu@urfu.ru and request to record the result and upload it to the BRS. </li>',
+        '<li>Write an email to <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> and request to record the result and upload it to the BRS. </li>',
         "ch": '<li>报名参加新学期推出的实际课程 </li>'+
-        '<li>发送电子邮件至 openedu@urfu.ru，要求加入债务人群组，以便完全访问课程 </li>'+
+        '<li>发送电子邮件至 <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a>，要求加入债务人群组，以便完全访问课程 </li>'+
         '<li>除期末考试外，各科成绩合格 </li>'+
         '<li>提交开放最终控制权的申请。申请处理完毕后，我们将通过电子邮件通知您何时可以开始接受最终控制。 </li>'+
         '<li> 报名参加有监考的期末测验，并顺利通过。</li>'+
-        '<li> 给 openedu@urfu.ru 写一封电子邮件，要求记录结果并上传到 BRS。</li>',
+        '<li> 给 <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> 写一封电子邮件，要求记录结果并上传到 BRS。</li>',
         "ar": '<li> 	اشترك في إطلاق الدورة التدريبية الفعلية في الفصل الدراسي الجديد</li>'+
-        '<li>	إرسال بريد إلكتروني إلى openedu@urfu.ru لطلب إضافتك إلى مجموعة المدينين للوصول الكامل إلى الدورة التدريبية </li>'+
+        '<li>	إرسال بريد إلكتروني إلى <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> لطلب إضافتك إلى مجموعة المدينين للوصول الكامل إلى الدورة التدريبية </li>'+
         '<li> 	تحقيق درجات النجاح في كل قسم باستثناء التحكم النهائي</li>'+
         '<li> 	تقديم طلب لفتح باب الدخول لأخذ التحكم النهائي. بمجرد أن تتم معالجة الطلب، ستتلقى إشعارًا عبر البريد الإلكتروني عندما يمكنك البدء في أخذ التحكم النهائي.</li>'+
         '<li>	قم بالتسجيل لإجراء المراقبة النهائية مع المراقبة واجتيازها دون رسوب. </li>'+
-        '<li> 	اكتب بريدًا إلكترونيًا إلى openedu@urfu.ru واطلب تسجيل النتيجة وتحميلها على نظام تسجيل الدرجات.</li>',
+        '<li> 	اكتب بريدًا إلكترونيًا إلى <a href="mailto:openedu@urfu.ru"> openedu@urfu.ru</a> واطلب تسجيل النتيجة وتحميلها على نظام تسجيل الدرجات.</li>',
     },
     "h2_2__p_1":{ 
         "ru": 'После этого задолженность будет закрыта.',
@@ -331,7 +331,7 @@ const language={
     "h2_3":{ 
         "ru": 'Пересдача итогового контроля на платформе «Открытое образование»',
         "en": 'Retaking final exams on the "Открытое образование (Open Education)" platform',
-        "ch": '在 "open.ru "平台上重新提交最终控制程序',
+        "ch": '在 "openedu" 平台上重新提交最终控制程序',
         "ar": 'إعادة تقديم التحكم النهائي على المنصة "openedu"',
     },
     "h2_3__p_0":{ 
@@ -369,7 +369,7 @@ const language={
         "ar": 'امتحان',
     },
     "after_test":{ //тест
-        "ru": 'Поздравляем, Ты прошел курс!',
+        "ru": 'Поздравляем, ты прошел курс!',
         "en": 'Congratulations, you have completed the course! ',
         "ch": '恭喜您，您已完成本課程！',
         "ar": 'تهانينا، لقد أكملت الدورة!',
