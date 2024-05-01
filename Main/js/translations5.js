@@ -16,7 +16,7 @@ const tests_any_lang={
     ru:[
     {
       question: '1. За то время, пока ты писал экзамен, на улице стало темно и теперь тебя плохо видно на записи. Как предотвратить это?',
-      answers: ['Никак. А если проверяющие зачтут экзамен – активно оспаривать их решение',
+      answers: ['Никак. А если проверяющие не зачтут экзамен – активно оспаривать их решение',
       'Заранее включить свет в комнате',
       'Посветить лицо телефоном'],
       correct: 2,
@@ -38,7 +38,7 @@ const tests_any_lang={
       en:[
         {
             question: '1. While you were taking the exam, it got dark outside and now you cant be seen clearly on the recording. How to prevent this?',
-            answers: ['There is no way to prevent it. And if the examiners pass the exam - actively challenge their decision',
+            answers: ['There is no way to prevent it. And if the examiners not pass the exam - actively challenge their decision',
             'Turn on the light in the room in advance',
             'Shine your face with a phone'],
             correct: 2,
@@ -60,7 +60,7 @@ const tests_any_lang={
         ch:[
             {
                 question: '当您正在做考试时，外面天色变暗，现在您很难在录音中看到。 如何防止这种情况发生？',
-                answers: ['决不。 如果检查员未通过考试，请积极质疑他们的决定',
+                answers: ['決不。 如果檢查員沒有通過考試，積極質疑他們的決定',
                 '提前打开房间的灯',
                 '将手机照在脸上'],
                 correct: 2,
@@ -82,7 +82,7 @@ const tests_any_lang={
             ar:[
                 {
                     question: '1. خلال الوقت الذي كنت تكتب فيه الامتحان، حلّ الظلام في الخارج والآن لا يمكن رؤيتك جيداً في التسجيل. كيف يمكنك منع حدوث ذلك؟',
-                    answers: ['	لا يمكنك ذلك. وإذا كان الممتحنون يعتمدون الامتحان - اعترض بنشاط على قرارهم',
+                    answers: ['مستحيل. وإذا لم يجتاز المفتشون الاختبار، قم بتحدي قرارهم بشكل فعال',
                     '	قم بإضاءة الأنوار في الغرفة مسبقاً',
                     '	سلط الضوء على وجهك باستخدام هاتفك'],
                     correct: 2,
@@ -196,9 +196,9 @@ const language={
     },
     "footer_about_us_p1":{ //футер
         "ru": 'Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов',
-        "en": 'Lets tell you a little about ourselves. Our team "Freedom Seals" was created in 2023 to create cool software products',
-        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「Freedom Seals」成立於 2023 年，致力於創造酷炫的軟體產品',
-        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "Freedom Seals" في عام 2023 لإنشاء منتجات برمجية رائعة',
+        "en": 'Lets tell you a little about ourselves. Our team "RadioSeals" was created in 2023 to create cool software products',
+        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「RadioSeals」成立於 2023 年，致力於創造酷炫的軟體產品',
+        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "RadioSeals" في عام 2023 لإنشاء منتجات برمجية رائعة',
     },
     "to_lesson_1":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К первому уроку!</a></button>',
@@ -207,7 +207,7 @@ const language={
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ar&">إلى الدرس الأول!</a></button>',
     },
     "to_lesson_2":{ //ссылка на урок
-        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">К второму уроку!</a></button>',
+        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">Ко второму уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=en&">To the second lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ch&">繼續第二課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ar&">إلى الدرس الثاني!</a></button>',
@@ -239,7 +239,7 @@ const language={
     "to_lesson_7":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ru&">К седьмому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=en&">To the seventh lesson!</a></button>',
-        "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ch&"繼續第七課！</a></button>',
+        "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ch&">繼續第七課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ar&">إلى الدرس السابع!</a></button>',
     },
     "h1_0":{ //Начальные теги в уроках
@@ -317,7 +317,7 @@ const language={
         '<li>准备好你的工作场所：你的脸应该光线充足，摄像头视野中不应有陌生人 </li>'+
         '<li> 拍摄您的身份证明文件（护照或学生证）的照片并确保可以读取数据</li>',
 
-        "ar": '<li> 	يتم تنظيمه على منصة exam2.urfu.ru</li>'+
+        "ar": '<li> 	يتم تنظيمه على منصة <a href="https://exam2.urfu.ru/">exam2.urfu.ru</a></li>'+
          '<li> 	سيتم معرفة وقت الامتحان مسبقاً.</li>'+
         '<li> 	سيتم عرض الامتحانات القادمة في نافذة "التنقل" في قائمة "مقرراتي الدراسية" أو في قائمة "جدول الدورات الشتوية/الصيفية"، حيث ستحتاج إلى إدخال مجموعتك الأكاديمية في مربع البحث</li>'+
         '<li> 	كل ما تحتاجه هو الوصول إلى كاميرا تلتقط صورة لك أثناء أداء واجباتك كل 30 ثانية. </li>'+
@@ -366,7 +366,7 @@ const language={
         '<li>Log in through the "Открытое образование (Open Education)" account </li>',
         "ch": '<li><a href="https://itmoproctor.openedu.ru/dist/"> ITMOproctor</a>应用程序必须提前安装在您的 PC 上 </li>'+
         '<li>通过您的开放教育帐户登录 </li>',
-        "ar": '<li> 	يجب تثبيت تطبيق ITMOproctor على جهاز الكمبيوتر الخاص بك مسبقًا</li>'+
+        "ar": '<li> 	يجب تثبيت تطبيق <a href="https://itmoproctor.openedu.ru/dist/"> ITMOproctor</a> على جهاز الكمبيوتر الخاص بك مسبقًا</li>'+
         '<li> 	تسجيل الدخول باستخدام حساب التعليم المفتوح الخاص بك</li>',
     },
     "h2_2__ul_1":{ 
