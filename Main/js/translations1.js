@@ -188,9 +188,9 @@ const language={
     },
     "footer_about_us_p1":{ //футер
         "ru": 'Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов',
-        "en": 'Lets tell you a little about ourselves. Our team "Freedom Seals" was created in 2023 to create cool software products',
-        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「Freedom Seals」成立於 2023 年，致力於創造酷炫的軟體產品',
-        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "Freedom Seals" في عام 2023 لإنشاء منتجات برمجية رائعة',
+        "en": 'Lets tell you a little about ourselves. Our team "RadioSeals" was created in 2023 to create cool software products',
+        "ch": '讓我們向您介紹一下我們自己。 我們的團隊「RadioSeals」成立於 2023 年，致力於創造酷炫的軟體產品',
+        "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "RadioSeals" في عام 2023 لإنشاء منتجات برمجية رائعة',
     },
     "to_lesson_1":{ //ссылка на урок
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К первому уроку!</a></button>',
@@ -199,7 +199,7 @@ const language={
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ar&">إلى الدرس الأول!</a></button>',
     },
     "to_lesson_2":{ //ссылка на урок
-        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">К второму уроку!</a></button>',
+        "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">Ко второму уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=en&">To the second lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ch&">繼續第二課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ar&">إلى الدرس الثاني!</a></button>',
@@ -281,8 +281,8 @@ const language={
     "h2_1__ul_1":{ 
         "ru": '<li>В поле «Идентификатор» введи свои контактные данные из списка.</li>'+
         '<li>Найди себя, пройди аутентификацию и зарегистрируйся на портале.</li>',
-        "en": '<li>Go to the identification website id.urfu.ru.</li>'+
-                '<li>In the "Identifier" field, enter your contact information from the list.</li>',
+        "en": '<li>In the "Identifier" field, enter your contact information from the list.</li>'+
+                '<li> Find yourself, authenticate, and register on the portal.</li>',
         "ch": '<li> 在“标识符”字段中，输入列表中您的联系信息。</li>'+
         '<li>在门户上找到自己、进行身份验证并注册。</li>',
         "ar": '<li>في الحقل "المعرف"، أدخل بيانات الاتصال الخاصة بك من القائمة.</li>'+
@@ -318,9 +318,9 @@ const language={
     },
     "h2_2__ul_1":{ 
         "ru": '<li>Когда доступ будет активирован, на этой же странице снова будет розовая кнопка «Перейти к использованию сервиса». Нажав на неё, ты попадёшь на портал <a href="https://www.microsoft365.com/">office.com</a>. Выполнив минимальные настройки, ты наконец получишь доступ к некоторым веб-приложениям и персональную почту с доменом @urfu.me.</li>',
-        "en": '<li>When the access is activated, on the same page, there will be a pink button "Go to use the service" again. By clicking on it, you will go to the <a href="https://www.microsoft365.com/">office.com</a> portal. After making minimal settings, you will finally get access to some web applications and personal email with the @urfu.me domain</li>',
-        "ch": '<li>激活访问后，同一页面上将再次出现粉红色的“继续使用服务”按钮。 单击它将带您进入 <a href=" https://www.microsoft365.com/ "> office.com </a>门户。 完成最少的设置后，您最终将可以访问一些带有 @urfu.me 域的 Web 应用程序和个人邮件。</li>',
-        "ar": '<li><a href="https://www.microsoft365.com/ ">office.com </a>عندما يتم تنشيط الوصول، ستجد زرًا ورديًا مع تعليمات "الانتقال إلى استخدام الخدمة" على نفس الصفحة. بعد النقر عليه، ستصل إلى بوابة بعد إجراء الإعدادات الأدنى، ستحصل أخيرًا على وصول إلى بعض التطبيقات الويب وبريدك الإلكتروني الشخصي بنطاق @urfu.me.</li>',
+        "en": '<li>When the access is activated, on the same page, there will be a pink button "Перейти к использованию сервиса" again. By clicking on it, you will go to the <a href="https://www.microsoft365.com/">office.com</a> portal. After making minimal settings, you will finally get access to some web applications and personal email with the @urfu.me domain</li>',
+        "ch": '<li>激活访问后，同一页面上将再次出现粉红色的 "Перейти к использованию сервиса" 按钮。 单击它将带您进入 <a href=" https://www.microsoft365.com/ "> office.com </a>门户。 完成最少的设置后，您最终将可以访问一些带有 @urfu.me 域的 Web 应用程序和个人邮件。</li>',
+        "ar": '<li><a href="https://www.microsoft365.com/ ">office.com </a>عندما يتم تنشيط الوصول، ستجد زرًا ورديًا مع تعليمات "الانتقال إلى استخدام الخدمة" "Перейти к использованию сервиса" على نفس الصفحة. بعد النقر عليه، ستصل إلى بوابة بعد إجراء الإعدادات الأدنى، ستحصل أخيرًا على وصول إلى بعض التطبيقات الويب وبريدك الإلكتروني الشخصي بنطاق @urfu.me.</li>',
     },
     "h2_2__p_1":{ 
         "ru": 'Запомни её! Она пригодится на следующем этапе.',
