@@ -230,6 +230,9 @@ li {
 
 .footer_p {
   color: white;
+  font-weight: 300;
+  text-indent: 0;
+  padding: 0 0 0 25px;
 }
 
 .footer_p_last {
@@ -244,14 +247,14 @@ li {
 
 .footer_links1 {
   min-width: 200px;
-  max-width: 40%;
-  margin: 0 0% 0 2%;
+  max-width: 30%;
+  margin: 0 0% 0 20%;
 }
 
 .footer_links2 {
   min-width: 200px;
-  max-width: 40%;
-  margin: 0 10% 0 3%;
+  max-width: 30%;
+  margin: 0 10% 0 5%;
 }
 
 .lesson_page_container {
@@ -266,6 +269,8 @@ li {
 }
 
 h2 {
+  margin-top: 25px;
+  margin-bottom: 8px;
   font-size: 17px;
   font-weight: 500;
   text-align: center;
@@ -274,7 +279,10 @@ h2 {
 .lesson_page_h2 {
   padding: 15px 0 0 0;
 }
-
+.page_lesson_content {
+  padding-bottom: 10px;
+  margin: 0 0 0 15%;
+}
 .page_lesson_contents {
   color: rgb(70, 70, 70);
 }
@@ -296,9 +304,6 @@ h2 {
   list-style: "✨ ";
 }
 
-.page_lesson_content {
-  margin: 0 0 0 15%;
-}
 
 p {
   padding: 0;
@@ -315,13 +320,17 @@ p {
 .img_lesson {
   max-width: 100%;
 }
-
-.link_to_other_lessons {
-  margin: 20px 30px 20px 30px;
-  display: flex;
-  justify-content: space-between;
+#after_test{
+  margin-top: -10px;
 }
-
+.link_to_other_lessons {
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  justify-content:space-around;
+}
+.link_to_other_lessons div+div {
+  margin-left: 30%; 
+}
 .quiz-header {
   font-weight: 500;
   font-size: 14px;
@@ -429,11 +438,20 @@ p {
     max-width: 60%;
     margin: 0 20%;
   }
+  .footer_links1 {
+    margin: 0 0% 0 15%;
+  }
 }
 @media (max-width: 991px) {
   .container_1 {
     max-width: 100%;
     margin: 0 5%;
+  }
+  .footer_links1 {
+    margin: 0 0% 0 10%;
+  }
+  .page_lesson_content {
+    margin: 0 0 0 8%;
   }
 }
 @media (max-width: 750px) {
@@ -455,6 +473,12 @@ p {
     max-width: 70%;
     margin: 0 15%;
   }
+  .footer_links1 {
+    margin: 0 0% 0 5%;
+  }
+  .link_to_other_lessons div+div {
+    margin-left: 20%; 
+  }
 }
 @media (max-width: 635px) {
   .container_1 {
@@ -467,6 +491,12 @@ p {
   .h1_lesson {
     text-align: center;
     padding: 7px 0 0 0;
+  }
+  .footer_links1 {
+    margin: 0 0% 0 5%;
+  }
+  .page_lesson_content {
+    margin: 0 0 0 3%;
   }
 }
 @media (max-width: 575px) {
@@ -498,6 +528,13 @@ p {
     margin: 15px 2px;
     max-width: 170px;
   }
+  .page_lesson_content {
+    margin: 0 0 0 3%;
+  }
+  
+  .link_to_other_lessons div+div {
+    margin-left: 0px; 
+  }
 }
 @media (max-width: 380px) {
   .card {
@@ -505,9 +542,14 @@ p {
     max-width: 40%;
   }
   .link_to_other_lessons {
-    margin: 20px 10px 20px 10px;
-    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
     flex-wrap: wrap;
+  }
+  .footer_links1 {
+    margin: 0 0% 0 2%;
+  }
+  .page_lesson_content {
+    margin: 0 0 0 0%;
   }
 }
 @media (max-width: 330px) {
@@ -516,14 +558,14 @@ p {
     max-width: 140px;
   }
   .link_to_other_lessons {
-    margin: 10px 10px 10px 10px;
+    margin: 10px 20%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
   .link_to_other_lessons div {
     min-width: 120px;
-    margin: 3px auto;
+    margin: 3px 0;
     padding: 0 2px;
   }
 }
