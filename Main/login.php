@@ -160,7 +160,7 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
     </select> 
     </form>
     <a href="login.php?mode=0">текст</a>
-    <a href="login.php?mode=7">картинки</a>
+    <a href="login.php?mode=7">картинки/видео</a>
     <a href="login.php?mode=5">.html</a>
     <a href="login.php?mode=8">.css/.js</a>
     <a href="login.php">предпросмотр</a>
@@ -219,6 +219,14 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
         echo('<input type="submit" value="Загрузить картинку">');
         echo('</form>');
         echo('</div>');
+
+        echo('<div>');
+        echo('<form method="POST" action="login.php?mode=12">');
+        echo('<input type="text" name="youtube_link" placeholder="Введите ссылку на видео на YouTube" required>');
+        echo('<input type="submit" value="Добавить видео">');
+        echo('</form>');
+        echo('</div>');
+
     };
       
     
@@ -293,6 +301,38 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
             echo 'Ошибка при загрузке картинки.';
         }
     };
+
+    if ($_GET['mode'] == '12') {
+        if (!empty($_POST['youtube_link'])) {
+            $youtube_link = $_POST['youtube_link'];
+
+            // Формируем HTML-код для вставки видео на страницу
+            $video_code = '<br><div class="embed-responsive embed-responsive-16by9" style="display:flex; justify-content: center;">';
+            $video_code .= '<iframe width="560" height="315" src="' . $youtube_link . '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+            $video_code .= '</div>';
+
+            // Получаем содержимое файла страницы
+            $page_content = file_get_contents($pagename);
+
+            // Находим позицию, перед которой нужно вставить видео
+            $position = strpos($page_content, '<div class="img');
+            if ($position !== false) {
+                // Вставляем HTML-код с видео перед указанным элементом
+                $updated_page_content = substr_replace($page_content, $video_code, $position, 0);
+
+                // Сохраняем обновленное содержимое страницы
+                file_put_contents($pagename, $updated_page_content);
+
+                // Выводим сообщение об успешном добавлении видео
+                echo 'Видео было успешно добавлено на страницу.';
+            } else {
+                echo 'Не удалось найти место для вставки видео.';
+            }
+        } else {
+            echo 'Не удалось получить ссылку на видео.';
+        }
+    };
+
 
     function getTranslationsFileName($pagename) {
     // Извлекаем номер урока из имени файла
