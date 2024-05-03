@@ -1,5 +1,4 @@
 function main(){
-    addSearch();
     pageGoToId();
     FlashingInscription();
     Translate();
@@ -150,8 +149,6 @@ function Translate(){
             continue;
         }
     }
-   
-    updateSearch();
     InitializeTests(inf_language);
     pageGoToId();
 }
