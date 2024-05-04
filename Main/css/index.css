@@ -145,6 +145,7 @@ h3 {
 
 .main_page__h1_lessons {
   text-align: center;
+  margin: 0;
 }
 
 .button_greet {
@@ -265,7 +266,7 @@ li {
 .lesson_page_h1 {
   text-align: center;
   padding: 10px 0 0 0;
-  margin-bottom: 0;
+  margin-bottom: -10px;
 }
 
 h2 {
@@ -280,8 +281,8 @@ h2 {
   padding: 15px 0 0 0;
 }
 .page_lesson_content {
-  padding-bottom: 10px;
-  margin: 0 0 0 15%;
+  padding-bottom: 0px;
+  margin: 0 0 -10px 15%;
 }
 .page_lesson_contents {
   color: rgb(70, 70, 70);
@@ -615,4 +616,4 @@ p {
       opacity: 100%;
     }
   }
-}/*# sourceMappingURL=index.css.map */
+}
