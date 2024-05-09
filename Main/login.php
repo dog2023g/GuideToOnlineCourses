@@ -356,6 +356,19 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
 
     if($_GET['mode']=='0'){
 
+        
+        $tempTranslationsContent = '';
+        
+        preg_match_all('/"ru": \'(.*?)\'| "en": \'(.*?)\'| "ch": \'(.*?)\'| "ar": \'(.*?)\'/', $translationsContent, $matches);
+        
+        foreach ($matches[0] as $fragment) {
+            if (!empty($fragment)) {
+                $tempTranslationsContent .= $fragment;
+            }
+        }
+        
+        $translationsContent = $tempTranslationsContent;
+
         $ff=array(); $content=preg_replace('/<[^>]+>/', '^', $translationsContent);$teksta=explode('^',$content);
         for($j=0;$j<count($teksta);$j++){if(strlen(trim($teksta[$j]))>1) $ff[]=(trim($teksta[$j]));};
         for($j=0;$j<count($ff);$j++){
@@ -368,13 +381,26 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
 
     if($_GET['mode']=='3'){
 
+        
+        $tempTranslationsContent = '';
+        
+        preg_match_all('/"ru": \'(.*?)\'| "en": \'(.*?)\'| "ch": \'(.*?)\'| "ar": \'(.*?)\'/', $translationsContent, $matches);
+        
+        foreach ($matches[0] as $fragment) {
+            if (!empty($fragment)) {
+                $tempTranslationsContent .= $fragment;
+            }
+        }
+        
+        $translationsContent = $tempTranslationsContent;
+        
         $ff=array(); $content=preg_replace('/<[^>]+>/','^',$translationsContent); $teksta=explode('^',$content);
         for($j=0;$j<count($teksta);$j++){ if(strlen(trim($teksta[$j]))>1) $ff[]=(trim($teksta[$j]));};
-        $jj=$_GET['j'];
-        $tektekst=$ff[$jj];
-        $kol=1;
-        for($j=0;$j<$jj;$j++){
-            $kol=$kol+substr_count($ff[$j], $tektekst);
+            $jj=$_GET['j'];
+            $tektekst=$ff[$jj];
+            $kol=1;
+            for($j=0;$j<$jj;$j++){
+                $kol=$kol+substr_count($ff[$j], $tektekst);
         };
         echo('<div style="margin: 0 auto; text-align: center;"><form method="POST" action="login.php?mode=4&j='.$jj.'"><br><br><h2>Редактирование текстовго фрагмнта</h2><br><br><textarea name="mytext">'.$tektekst.'</textarea><br><input style="width: 300px;
         padding-top:19px;
@@ -390,6 +416,19 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
 
 
     if($_GET['mode']=='4'){
+
+        
+        $tempTranslationsContent = '';
+        
+        preg_match_all('/"ru": \'(.*?)\'| "en": \'(.*?)\'| "ch": \'(.*?)\'| "ar": \'(.*?)\'/', $translationsContent, $matches);
+        
+        foreach ($matches[0] as $fragment) {
+            if (!empty($fragment)) {
+                $tempTranslationsContent .= $fragment;
+            }
+        }
+        
+        $translationsContent = $tempTranslationsContent;
 
         $ff=array(); $content=preg_replace('/<[^>]+>/', '^', $translationsContent); $teksta=explode('^',$content);
         for($j=0;$j<count($teksta);$j++){ if(strlen(trim($teksta[$j]))>1) $ff[]=(trim($teksta[$j]));};
@@ -539,5 +578,4 @@ else {
 };
 
 ?>
-
 
