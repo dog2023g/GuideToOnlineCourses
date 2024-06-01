@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     return response.text();
                 })
                 .then(text => {
+                    const titleMatch = text.match(/"h1_0":\s*\{\s*"ru":\s*'(.*?)'/);
+                    const lessonTitle = titleMatch ? titleMatch[1] : `lesson${i}`;
                     const lines = text.split('\n');
                     let linkCreated = false; 
                     lines.forEach(line => {
@@ -47,15 +49,37 @@ document.addEventListener("DOMContentLoaded", function () {
                             else {
                                 href = `lesson${i}.html?lang=ru&#${prev}`;
                             }
+                            /*
                             //prev = '';
                             const link = document.createElement("a");
                             link.href = href;
-                            link.textContent = `Найдено в lesson${i}.html`;
+                            //link.textContent = `Найдено в lesson${i}.html`;
+                            let foundLine = line.match(new RegExp(`.{0,30}${searchTerm}.{0,30}`, 'i'))[0];
+                            link.textContent = `Найдено в ${lessonTitle}\n${foundLine}`;
+
                             const listItem = document.createElement("div");
                             listItem.classList.add("search-result-item"); // Добавляем класс для стилизации
                             listItem.appendChild(link);
                             searchResultsDropdown.appendChild(listItem);
                             linkCreated = true; // Устанавливаем флаг, что ссылка создана
+                            */
+                            const lineWithoutTags = line.replace(/<\/?[^>]+(>|$)/g, "");
+
+                            // Найти строку и выделить искомую фразу
+                            let foundLine = lineWithoutTags.match(new RegExp(`.{0,30}${searchTerm}.{0,30}`, 'i'))[0];
+                            const highlightedLine = foundLine.replace(new RegExp(searchTerm, 'gi'), match => `<mark>${match}</mark>`);
+
+                            const link = document.createElement("a");
+                            link.href = href;
+                            link.style.color = "black"; // Ссылка будет черного цвета
+
+                            link.innerHTML = `<span style="font-weight: bold;">Найдено в ${lessonTitle}</span><br><span>${highlightedLine}</span>`;
+
+                            const listItem = document.createElement("div");
+                            listItem.classList.add("search-result-item"); // Добавляем класс для стилизации
+                            listItem.appendChild(link);
+                            searchResultsDropdown.appendChild(listItem);
+                            linkCreated = true;
                         }
                         if (!line.toLowerCase().includes(searchTerm)) {
                             const regex2 = /\"(\w+)":{/g;
