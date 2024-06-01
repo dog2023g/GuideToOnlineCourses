@@ -3,7 +3,10 @@ function main(){
     FlashingInscription();
     Translate();
 }
-function InitializeTests(lang){
+function InitializeTests(){
+    var path = document.getElementById("result_of_tests");
+    path.innerHTML='';
+    let lang= getQueryParameterValue("lang");
     let button_answer={ru:"Ответить", en:"Answer", ch:"回答", ar:"إجابة",}
     let path_tests = document.getElementById('lesson_tests');
     if (path_tests==null){
@@ -26,12 +29,14 @@ function InitializeTests(lang){
             '<p>'+tests[i]["question"]+'</p>'+
         '</div>'+
         '<ul class="quiz-list" id="list_'+i+'">'+ many_answers +'</ul>'+
-        '<div class="bu"><button class="btn btn-success" onclick="checkAnswer('+i+', `'+lang+'`);" id="submit_'+i+'" >'+button_answer[lang]+'</button></div>'+
+        '<div class="bu"><button class="btn btn-success" onclick=" checkAnswer('+i+', `'+lang+'`);" id="submit_'+i+'" >'+button_answer[lang]+'</button></div>'+
       '</div>';
     }
 }
 function checkAnswer(index_quiz, lang){
+    var maxTests=tests_any_lang["ru"].length;
     var tests = tests_any_lang[lang];
+    var path = document.getElementById("result_of_tests");
     var path_quiz = document.getElementById('quiz_'+index_quiz);
     var answers=document.getElementById('list_'+index_quiz);
     var answer=answers.querySelector('input[type="radio"]:checked');
@@ -42,7 +47,12 @@ function checkAnswer(index_quiz, lang){
     var user_anwer=parseInt(answer.value)+1;
     var word_true = {ru:"Правильно!", en:"Correct!",ch:"正確的", ar:"يمين"};
     var word_false = {ru:"Неверно!", en:"Wrong!", ch:"錯誤的", ar:"خطأ"};
+    var word_result1={ru:"Ваш результат: ", en:"Your score: ",ch:"您的得分：", ar:" درجاتك:"};
+    var word_result2={ru:" из ", en:" out of ",ch:" 分滿分 ", ar:" من"};
+    var buttonUpdateTests={ru:"Пройти тест еще раз", en:"Take the test again",ch:"再次參加測試", ar:"قم بإجراء الاختبار مرة أخرى"};
+    doneTests++;
     if (correct_answer==user_anwer){
+        correctTests++;
         var res ='<p style="color:rgb(86, 237, 86); font-weight: 500; padding-bottom: 16px;">'+word_true[lang]+ ' &#127881;</p>'
     }
     else{
@@ -63,6 +73,11 @@ function checkAnswer(index_quiz, lang){
     '</div>'+
     '<ul style="padding-left: 45px;" class="quiz-list" id="list_'+index_quiz+'">'+ many_answers2 +'</ul>'+ res+
   '</div>';
+  if (doneTests>0){
+    path.innerHTML=word_result1[lang] + correctTests + word_result2[lang] + maxTests;
+    path.innerHTML+= '<div  class="button" style="padding-top:10px"><button onclick="correctTests=0; doneTests=0;InitializeTests();" class="btn btn-success" id="updateTests">'+ buttonUpdateTests[lang]+'</button></div>';
+  }
+    
 }
 function pageGoToId() {
     document.addEventListener('DOMContentLoaded', function() {
@@ -90,6 +105,31 @@ async function reloadPageForContents() {
     location.reload();
 }
 async function FlashingInscription(){
+    if (window.location.pathname.match(/lesson.+.html/))
+        {
+            const style = document.createElement('style');
+  style.textContent = "#button_translate {animation-name: none ;}";
+    document.head.appendChild(style);
+    let inf_language = getQueryParameterValue("lang");
+    var button_translate = document.getElementById("button_translate");
+    if (inf_language=="ru")
+    {
+        button_translate.innerHTML="Перевод";
+    }
+    if (inf_language=="en")
+        {
+            button_translate.innerHTML="Translate";
+        }
+        if (inf_language=="ch")
+            {
+                button_translate.innerHTML="翻譯";
+            }
+        if (inf_language=="ar")
+            {
+                button_translate.innerHTML="ترجم";
+            }
+  return;
+        }
     var button_translate = document.getElementById("button_translate");
     await new Promise(r => setTimeout(r, 1500));
     button_translate.innerHTML="Translate";
@@ -149,7 +189,10 @@ function Translate(){
             continue;
         }
     }
-    InitializeTests(inf_language);
+    InitializeTests();
     pageGoToId();
 }
 main();
+var doneTests=0;
+
+var correctTests=0;
