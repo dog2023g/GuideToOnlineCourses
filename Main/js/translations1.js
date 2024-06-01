@@ -96,139 +96,145 @@ const tests_any_lang={
     };
 
 const language={
-    "link_our_name":{ //навигационная панель
+    "link_our_name":{ 
         "ru": '<a class="navbar-brand" href="'+toMain+'"><img src="img/seal_12890965.png" alt="&nbspТюлени Свободы" width="50" height="50"></a>',
         "en": '<a class="navbar-brand" href="'+toMain+'?lang=en&"><img src="img/seal_12890965.png" alt="&nbspRadio Seals" width="50" height="50"></a>',
         "ch": '<a class="navbar-brand" href="'+toMain+'?lang=ch&"><img src="img/seal_12890965.png" alt="&nbsp自由印章" width="50" height="50"></a>',
         "ar": '<a class="navbar-brand" href="'+toMain+'?lang=ar&"><img src="img/seal_12890965.png" alt="&nbspأختام الحرية" width="50" height="50"></a>'
     },
-    "link_name":{ //навигационная панель
+    "link_name":{ 
         "ru": '<a class="nav-link active" aria-current="page" href="'+toMain+'">Главная</a>',
         "en": '<a class="nav-link active" aria-current="page" href="'+toMain+'?lang=en&">Main</a>',
         "ch": '<a class="nav-link active" aria-current="page" href="'+toMain+'?lang=ch&">首頁</a>',
         "ar": '<a class="nav-link active" aria-current="page" href="'+toMain+'?lang=ar&">بيت</a>'
     },
-    "link_lessons":{ //навигационная панель
+    "link_lessons":{ 
         "ru": '<a class="nav-link" href="'+lessons+'?lang=ru&#to_lessons">Уроки</a>',
         "en": '<a class="nav-link" href="'+lessons+'?lang=en&#to_lessons">Lessons</a>',
         "ch": '<a class="nav-link" href="'+lessons+'?lang=ch&#to_lessons">教訓</a>',
         "ar": '<a class="nav-link" href="'+lessons+'?lang=ar&#to_lessons">دروس</a>'
     },
-    "link_about_us":{ //навигационная панель
+    "link_about_us":{ 
         "ru": '<a class="nav-link" href="'+aboutUs+'?lang=ru&#footer">О нас</a>',
         "en": '<a class="nav-link" href="'+aboutUs+'?lang=en&#footer">About us</a>',
         "ch": '<a class="nav-link" href="'+aboutUs+'?lang=ch&#footer">關於我們</a>',
         "ar": '<a class="nav-link" href="'+aboutUs+'?lang=ar&#footer">معلومات عنا</a>'
     },
-    "searchForm":{ //навигационная панель
+    "searchForm":{ 
         "ru": '<label for="searchInput"></label>'+
         '<input class="form-control me-2" type="search" placeholder="Например: Exam2" id="searchInput" name="searchInput" autocomplete="off">'+
-        '<button class="btn btn-outline-success" type="submit">Найти</button>'+
+        '<button style="display: none;" class="btn btn-outline-success" type="submit">Найти</button>'+
         '<div id="searchResultsDropdown" class="position-absolute bg-white shadow-sm border" style="display: none; top: calc(90% + 5px); width: 100%;"></div>',
         "en": '<label for="searchInput"></label>'+
         '<input class="form-control me-2" type="search" placeholder="For example: Exam2" id="searchInput" name="searchInput" autocomplete="off">'+
-        '<button class ="btn btn-outline-success" type="submit">Find</button>'+
+        '<button style="display: none;" class ="btn btn-outline-success" type="submit">Find</button>'+
         '<div id="searchResultsDropdown" class="position-absolute bg-white shadow-sm border" style="display: none; top: calc(90% + 5px); width: 100%;"></div>',
         "ch": '<label for="searchInput"></label>'+
         '<input class="form-control me-2" type="search" placeholder="例如：考試2" id="searchInput" name="searchInput" autocomplete="off">'+
-        '<button class ="btn btn-outline-success" type="submit">尋找</button>'+
+        '<button style="display: none;" class ="btn btn-outline-success" type="submit">尋找</button>'+
         '<div id="searchResultsDropdown" class="position-absolute bg-white shadow-sm border" style="display: none; top: calc(90% + 5px); width: 100%;"></div>',
         "ar": '<label for="searchInput"></label>'+
         '<input class="form-control me-2" type="search" placeholder="على سبيل المثال: الامتحان 2" id="searchInput" name="searchInput" autocomplete="off">'+
-        '<button class ="btn btn-outline-success" type="submit">يجد</button>'+
+        '<button style="display: none;" class ="btn btn-outline-success" type="submit">يجد</button>'+
         '<div id="searchResultsDropdown" class="position-absolute bg-white shadow-sm border" style="display: none; top: calc(90% + 5px); width: 100%;"></div>',
     },
-    "link_openedu":{ //футер
+    "linkAdmin":{ 
+        "ru": '<button class="btn btn-outline-success" type="submit" >Админ-панель</button>',
+        "en": '',
+        "ch": '',
+        "ar": ''
+    },
+    "link_openedu":{ 
         "ru": '<a class="nav-link" href="'+openedu+'">OpenEdu (Открытое образование)</a>',
         "en": '<a class="nav-link" href="'+openedu+'">OpenEdu (Открытое образование (Open Education) platform)</a>',
         "ch": '<a class="nav-link" href="'+openedu+'">OpenEdu</a>',
         "ar": '<a class="nav-link" href="'+openedu+'">OpenEdu</a>'
     },
-    "link_elearn":{ //футер
+    "link_elearn":{
         "ru": '<a class="nav-link" href="'+elern+'">elearn (Портал электронного обучения)</a>',
         "en": '<a class="nav-link" href="'+elern+'">elearn (Electronic Learning Portal)</a>',
         "ch": '<a class="nav-link" href="'+elern+'">elearn</a>',
         "ar": '<a class="nav-link" href="'+elern+'">elearn</a>',
     },
-    "link_exam1":{ //футер
+    "link_exam1":{ 
         "ru": '<a class="nav-link" href="'+exam1+'">Exam1 (Центр независимой оценки результатов обучения)</a>',
         "en": '<a class="nav-link" href="'+exam1+'">Exam1 (Center for Independent Assessment of Learning Outcomes)</a>',
         "ch": '<a class="nav-link" href="'+exam1+'">Exam1</a>',
         "ar": '<a class="nav-link" href="'+exam1+'">Exam1</a>',
     },
-    "link_exam2":{ //футер
+    "link_exam2":{
         "ru": '<a class="nav-link" href="'+exam2+'">Exam2</a>',
         "en": '<a class="nav-link" href="'+exam2+'">Exam2</a>',
         "ch": '<a class="nav-link" href="'+exam2+'">Exam2</a>',
         "ar": '<a class="nav-link" href="'+exam2+'">Exam2</a>',
     },
-    "h1_footer":{ //футер
+    "h1_footer":{
         "ru": 'Полезные ссылки',
         "en": 'Useful links',
         "ch": '有用的網站鏈接',
         "ar": 'روابط مفيدة للمواقع',
     },
-    "h2_footer":{ //футер
+    "h2_footer":{
         "ru": 'Учебные платформы:',
         "en": 'Educational platforms:',
         "ch": '培訓平台：',
         "ar": 'منصات التدريب:',
     },
-    "footer_images":{ //футер
+    "footer_images":{
         "ru": 'Изображения:',
         "en": 'Images:',
         "ch": '圖片：',
         "ar": 'الصور:',
     },
-    "footer_about_us":{ //футер
+    "footer_about_us":{
         "ru": 'О нас:',
         "en": 'About Us:',
         "ch": '關於我們：',
         "ar": 'معلومات عنا',
     },
-    "footer_about_us_p1":{ //футер
+    "footer_about_us_p1":{
         "ru": 'Расскажем немного про себя. Наша команда «Тюлени Свободы» была создана в 2023 для создания классных программных продуктов',
         "en": 'Lets tell you a little about ourselves. Our team "RadioSeals" was created in 2023 to create cool software products',
         "ch": '讓我們向您介紹一下我們自己。 我們的團隊「RadioSeals」成立於 2023 年，致力於創造酷炫的軟體產品',
         "ar": 'دعنا نخبرك قليلاً عن أنفسنا. تم إنشاء فريقنا "RadioSeals" في عام 2023 لإنشاء منتجات برمجية رائعة',
     },
-    "to_lesson_1":{ //ссылка на урок
+    "to_lesson_1":{
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ru&">К первому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=en&">To the first lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ch&">進入第一課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_1+'?lang=ar&">إلى الدرس الأول!</a></button>',
     },
-    "to_lesson_2":{ //ссылка на урок
+    "to_lesson_2":{ 
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ru&">Ко второму уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=en&">To the second lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ch&">繼續第二課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_2+'?lang=ar&">إلى الدرس الثاني!</a></button>',
     },
-    "to_lesson_3":{ //ссылка на урок
+    "to_lesson_3":{ 
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_3+'?lang=ru&">К третьему уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_3+'?lang=en&">To the third lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_3+'?lang=ch&">繼續第三課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_3+'?lang=ar&">إلى الدرس الثالث!</a></button>',
     },
-    "to_lesson_4":{ //ссылка на урок
+    "to_lesson_4":{ 
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_4+'?lang=ru&">К четвертому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_4+'?lang=en&">To the fourth lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_4+'?lang=ch&">繼續第四課</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_4+'?lang=ar&">إلى الدرس الرابع!</a></button>',
     },
-    "to_lesson_5":{ //ссылка на урок
+    "to_lesson_5":{ 
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_5+'?lang=ru&">К пятому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_5+'?lang=en&">To the fifth lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_5+'?lang=ch&">繼續第五課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_5+'?lang=ar&">إلى الدرس الخامس!</a></button>',
     },
-    "to_lesson_6":{ //ссылка на урок
+    "to_lesson_6":{ 
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ru&">К шестому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=en&">To the sixth lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ch&>"繼續第六課！</a></button>',
         "ar": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_6+'?lang=ar&">إلى الدرس السادس!</a></button>',
     },
-    "to_lesson_7":{ //ссылка на урок
+    "to_lesson_7":{
         "ru": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ru&">К седьмому уроку!</a></button>',
         "en": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=en&">To the seventh lesson!</a></button>',
         "ch": '<button type="button" class="btn btn-success"> <a class="white_link" href="'+lesson_7+'?lang=ch&"繼續第七課！</a></button>',
@@ -334,13 +340,13 @@ const language={
         "ch": '',
         "ar": '',
     },
-    "test":{ //test
+    "test":{ 
         "ru": 'Тест',
         "en": 'Test',
         "ch": '测试1',
         "ar": 'اختبار',
     },
-    "after_test":{ //тест
+    "after_test":{ 
         "ru": 'Отлично! Теперь пора приступать к следующему этапу!',
         "en": 'Great! Now its time to move on to the next stage!',
         "ch": '伟大的！ 现在是时候进入下一阶段了！',
