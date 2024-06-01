@@ -170,7 +170,7 @@ const language={
         "ar": '<div class="card-body"><h5 class="card-title"> تسجيل البريد الإلكتروني لجامعة الفيدرالية الأورالية</h5><p class="card-text">كيفية إنشاء حساب طالب وبريد إلكتروني للشركة</p><a href="'+lesson_1+'?lang=ar&" class="btn btn-success">إلى الدرس الأول!</a></div>',
     },
     "card_link_2_lesson":{
-        "ru": '<div class="card-body"><h5 class="card-title">Регистрация на платформах</h5><p class="card-text">Как зарегистрироваться на платформах проведения онлайн-курсов</p><a href="'+lesson_2+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
+        "ru": '<div class="card-body"><h5 class="card-title">Регистрация на платформах</h5><p class="card-text">Расскажем о платформах проведения онлайн-курсов</p><a href="'+lesson_2+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
         "en": '<div class="card-body"><h5 class="card-title">Platform Registration</h5><p class="card-text">How to register on online course hosting platforms</p><a href="'+lesson_2+'?lang=en&" class="btn btn-success">Get start!</a></div>',
         "ch": '<div class="card-body"><h5 class="card-title">平台注册</h5><p class="card-text">如何在线课程平台注册</p><a href="'+lesson_2+'?lang=ch&" class="btn btn-success">去！</a></div>',
         "ar": '<div class="card-body"><h5 class="card-title">التسجيل على منصات التدريب عبر الإنترنت</h5><p class="card-text">كيفية التسجيل على منصات تقديم الدورات التدريبية عبر الإنترنت</p><a href="'+lesson_2+'?lang=ar&" class="btn btn-success">يذهب!</a></div>',
