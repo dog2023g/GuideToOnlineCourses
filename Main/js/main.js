@@ -5,6 +5,8 @@ function main(){
 }
 function InitializeTests(){
     var path = document.getElementById("result_of_tests");
+    if (path==null)
+        return;
     path.innerHTML='';
     let lang= getQueryParameterValue("lang");
     let button_answer={ru:"Ответить", en:"Answer", ch:"回答", ar:"إجابة",}
