@@ -155,7 +155,9 @@ h3 {
 .card-title {
   font-weight: 500;
 }
-
+.result_of_tests{
+  text-align: center;
+}
 .card-body {
   min-height: 100%;
   display: flex;
