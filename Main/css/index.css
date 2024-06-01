@@ -458,6 +458,9 @@ p {
   }
 }
 @media (max-width: 750px) {
+  #linkAdmin{
+    display: none;
+  }
   .container_1 {
     max-width: 100%;
     margin: 0 3%;
