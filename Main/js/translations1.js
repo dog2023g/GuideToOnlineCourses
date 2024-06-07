@@ -266,6 +266,12 @@ const language={
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">كيفية الوصول إلى office.com وبريدك الإلكتروني؟</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();"> فحص المعرفة 😉</a></li>',
     },
+    "video_1":{ 
+        "ru": '<iframe width="560" height="315" src="https://www.youtube.com/embed/gAP-LkohC-U?si=TI_hl6s6osn76F_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "en": '',
+        "ch": '',
+        "ar": '',
+    },
     "h2_1":{ 
         "ru": 'Как завести личный кабинет УрФУ?',
         "en": 'How to create a personal account at UrFU?',
