@@ -282,6 +282,12 @@ const language={
         '<li><a class="page_lesson_contents" href="#h2_4" onclick="reloadPageForContents();">النجاح المبكر</a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();">التحقق من المعرفة 😉</a></li>',
     },
+    "video_1":{ 
+        "ru": '<iframe width="560" height="315" src="https://www.youtube.com/embed/DEcbV_bF2o8?si=NXk2nsfVTPwCzxCD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "en": '',
+        "ch": '',
+        "ar": '',
+    },
     "h2_0__p_0":{ 
         "ru": '<span style="text-decoration: line-through;"> Судный час</span> Итоговое тестирование. Время проверить полученные знания. Есть два пути для этого: независимый тестовый контроль (НТК) и прокторинг. Расскажем подробнее про каждый.',
         "en": '<span style="text-decoration: line-through;"> Doomsday </span> Final exam. Its time to test the knowledge gained. There are two ways to do this: independent test control (ITC) and proctoring. Lets describe each in detail.' ,
