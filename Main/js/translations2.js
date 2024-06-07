@@ -266,6 +266,12 @@ const language={
         '<li><a class="page_lesson_contents" href="#h2_2" onclick="reloadPageForContents();">  التسجيل على منصة (المعروفة أيضًا باسم elearn)(он же elearn)<a href="https://elearn.urfu.ru">  «Портал электронного обучения» </a></a></li>'+
         '<li><a class="page_lesson_contents" href="#test" onclick="reloadPageForContents();"> اختبار المعرفة 😉</a></li>',
     },
+    "video_1":{ 
+        "ru": '<iframe width="560" height="315" src="https://www.youtube.com/embed/iRGNVOPYt74?si=Y9DJerFRDs3sNRQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "en": '',
+        "ch": '',
+        "ar": '',
+    },
     "p_0":{ 
         "ru": 'Теперь тебе нужно зарегистрироваться на платформе проведения онлайн-курса!',
         "en": 'Now you need to register on the online course platforms!',
