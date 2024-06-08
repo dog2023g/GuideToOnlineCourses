@@ -31,7 +31,7 @@ const tests_any_lang={
       {
         question: '3. Изображение документа, удостоверяющего личность, на фотографии получилось не совсем чётким. Что сделаешь?',
         answers: ['Сделаю ещё фотографии, чтобы информация была читаема',
-        '«И так сойдёт»'
+        'Оставлю так'
     ],
         correct: 1,
       }],
@@ -53,7 +53,7 @@ const tests_any_lang={
             {
               question: '3. The image of the identity document in the photo turned out to be unclear. What will you do? ',
               answers: ['Take more photos to make the information readable',
-        '"It will do"'
+        'Leave it'
     ],
               correct: 1,
             }],
@@ -388,9 +388,9 @@ const language={
         "ar": '<li> 	قم بإعداد النظام (كاميرا الويب والميكروفون وعرض الشاشة) وتحقق من الاتصال. يمكنك القيام بذلك عبر العناصر المقابلة في علامة التبويب "القائمة"</li>',
     },
     "h2_2__ul_2":{ 
-        "ru": '<li>Запишись на экзамен. В центральной части окна отображаются экзамены, а справа – их статус. *будет фото* Нажми ниже кнопку «Запланировать» и выбери удобное время. После этого статус изменится на «Запланирован»</li>',
-        "en": '<li>Sign up for the exam. Exams are displayed in the central part of the window, and their status is displayed on the right. there will be a photo Click the "Schedule" button below and select a convenient time. After that, the status will change to "Scheduled" </li>',
-        "ch": '<li>报名参加考试。 检查显示在窗口的中央部分，其状态显示在右侧。 *会有一张照片* 单击下面的“安排”按钮并选择一个方便的时间。 此后，状态将更改为“已计划” </li>',
+        "ru": '<li>Запишись на экзамен. В центральной части окна отображаются экзамены, а справа – их статус. Нажми ниже кнопку «Запланировать» и выбери удобное время. После этого статус изменится на «Запланирован»</li>',
+        "en": '<li>Sign up for the exam. Exams are displayed in the central part of the window, and their status is displayed on the right. Click the "Schedule" button below and select a convenient time. After that, the status will change to "Scheduled" </li>',
+        "ch": '<li>报名参加考试。 检查显示在窗口的中央部分，其状态显示在右侧。  单击下面的“安排”按钮并选择一个方便的时间。 此后，状态将更改为“已计划” </li>',
         "ar": '<li> 	قم بالتسجيل في أحد الامتحانات. يتم عرض الامتحانات في وسط النافذة وحالتها على اليمين. *انقر على زر "جدولة" أدناه وحدد الوقت المناسب. ستتغير الحالة بعد ذلك إلى "مجدول"</li>',
     },
     "h2_2__ul_3":{ 
