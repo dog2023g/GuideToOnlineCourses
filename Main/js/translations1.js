@@ -17,12 +17,12 @@ const tests_any_lang={
     {
       question: '1. Твои данные в поле идентификатора не находятся. Что будешь делать?',
       answers: ['Проверю корректность своих данных, а также удостоверюсь, что уже можно начинать регистрироваться',
-      'Начну истерить, что ничего не получается'],
+      'Буду волноваться, что ничего не получается'],
       correct: 1,
     },
     {
         question: '2. Доступ к office.com не активировался сразу после подачи заявки. Твои действия?',
-        answers: ['Паникую, навожу суету',
+        answers: ['Паника',
         'Пишу в техподдержку, чтобы как можно быстрее дали доступ!',
         'Терпеливо жду 36 часов'],
         correct: 3,
@@ -42,7 +42,7 @@ const tests_any_lang={
         },
         {
             question: '2. Access to office.com was not activated immediately after submitting the application. What will you do? ',
-            answers: ['Panic and create a fuss',
+            answers: ['Panic',
             'Write to technical support to give access as soon as possible!',
             'Patiently wait for a 36 hours'],
             correct: 3,
