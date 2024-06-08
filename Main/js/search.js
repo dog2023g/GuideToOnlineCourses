@@ -6,9 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.addEventListener("input", function () {
         const searchTerm = searchInput.value.trim().toLowerCase();
         searchResultsDropdown.innerHTML = ""; // Очищаем предыдущие результаты
+        if (searchTerm.length < 3) {
+            return;
+        }
+        let resultCount = 0;
 
         // Проход по содержимому файлов translations
         for (let i = 1; i <= 7; i++) {
+            if (resultCount >= 5) break;
             let prev = '';
             fetch(`js/translations${i}.js`)
                 .then(response => {
@@ -23,7 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     const lines = text.split('\n');
                     let linkCreated = false; 
                     lines.forEach(line => {
-                        if (line.toLowerCase().includes(searchTerm) && !linkCreated) {
+                        if (resultCount >= 5) return;
+
+                        const textMatch = line.match(/"ru":\s*'(.*?)'|"en":\s*'(.*?)'|"ch":\s*'(.*?)'|"ar":\s*'(.*?)'/);
+                        const pureText = textMatch ? textMatch[1] || textMatch[2] || textMatch[3] || textMatch[4] : '';
+                        
+
+                        if (line.toLowerCase().includes(searchTerm) && pureText.toLowerCase().includes(searchTerm) && !linkCreated) {
                             const regex = /\?lang=(\w+)&#(\w+)/g;
                             const match = regex.exec(line);
                             let lang = '';
@@ -63,23 +74,26 @@ document.addEventListener("DOMContentLoaded", function () {
                             searchResultsDropdown.appendChild(listItem);
                             linkCreated = true; // Устанавливаем флаг, что ссылка создана
                             */
-                            const lineWithoutTags = line.replace(/<\/?[^>]+(>|$)/g, "");
+                            if (resultCount <= 5) {
+                                const lineWithoutTags = line.replace(/<\/?[^>]+(>|$)/g, "").replace(/["'+]/g, '').replace("ru:", '').replace("en:", '').replace("ch:", '').replace("ar:", '');
 
-                            // Найти строку и выделить искомую фразу
-                            let foundLine = lineWithoutTags.match(new RegExp(`.{0,30}${searchTerm}.{0,30}`, 'i'))[0];
-                            const highlightedLine = foundLine.replace(new RegExp(searchTerm, 'gi'), match => `<mark>${match}</mark>`);
+                                // Найти строку и выделить искомую фразу
+                                let foundLine = lineWithoutTags.match(new RegExp(`.{0,30}${searchTerm}.{0,30}`, 'i'))[0];
+                                const highlightedLine = foundLine.replace(new RegExp(searchTerm, 'gi'), match => `<mark>${match}</mark>`);
 
-                            const link = document.createElement("a");
-                            link.href = href;
-                            link.style.color = "black"; // Ссылка будет черного цвета
+                                const link = document.createElement("a");
+                                link.href = href;
+                                link.style.color = "black"; // Ссылка будет черного цвета
 
-                            link.innerHTML = `<span style="font-weight: bold;">Найдено в ${lessonTitle}</span><br><span>${highlightedLine}</span>`;
+                                link.innerHTML = `<span style="font-weight: bold;">Найдено в ${lessonTitle}</span><br><span>${highlightedLine}</span>`;
 
-                            const listItem = document.createElement("div");
-                            listItem.classList.add("search-result-item"); // Добавляем класс для стилизации
-                            listItem.appendChild(link);
-                            searchResultsDropdown.appendChild(listItem);
-                            linkCreated = true;
+                                const listItem = document.createElement("div");
+                                listItem.classList.add("search-result-item"); // Добавляем класс для стилизации
+                                listItem.appendChild(link);
+                                searchResultsDropdown.appendChild(listItem);
+                                linkCreated = true;
+                                resultCount++;
+                            }
                         }
                         if (!line.toLowerCase().includes(searchTerm)) {
                             const regex2 = /\"(\w+)":{/g;
@@ -124,4 +138,15 @@ document.addEventListener("DOMContentLoaded", function () {
             searchResultsDropdown.style.display = "none";
         }
     });
+
+    const style = document.createElement('style');
+    style.innerHTML = `
+        mark {
+            background-color: yellow;
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+        }
+    `;
+    document.head.appendChild(style);
 });
