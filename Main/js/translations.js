@@ -182,13 +182,13 @@ const language={
         "ar": '<div class="card-body"><h5 class="card-title">التسجيل على منصات التدريب عبر الإنترنت</h5><p class="card-text">كيفية التسجيل على منصات تقديم الدورات التدريبية عبر الإنترنت</p><a href="'+lesson_2+'?lang=ar&" class="btn btn-success">يذهب!</a></div>',
     },
     "card_link_3_lesson":{
-        "ru": '<div class="card-body"><h5 class="card-title">Регистрация на курс</h5><p class="card-text">Каким образом записаться на онлайн-курсы</p><a href="'+lesson_3+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
+        "ru": '<div class="card-body"><h5 class="card-title">Регистрация на курс</h5><p class="card-text">Объясним, как образом записаться на онлайн-курсы</p><a href="'+lesson_3+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
         "en": '<div class="card-body"><h5 class="card-title">Course Registration</h5><p class="card-text">How to enroll in online courses</p><a href="'+lesson_3+'?lang=en&" class="btn btn-success">Get start!</a></div>',
         "ch": '<div class="card-body"><h5 class="card-title">注册课程</h5><p class="card-text">如何注册在线课程</p><a href="'+lesson_3+'?lang=ch&" class="btn btn-success">去！</a></div>',
         "ar": '<div class="card-body"><h5 class="card-title">التسجيل في الدورة</h5><p class="card-text">كيفية التسجيل في الدورات عبر الإنترنت</p><a href="'+lesson_3+'?lang=ar&" class="btn btn-success">يذهب!</a></div>',
     },
     "card_link_4_lesson":{
-        "ru": '<div class="card-body"><h5 class="card-title">Фишки онлайн-курсов</h5><p class="card-text">Как следует проходить курсы, чтобы быть успешным</p><a href="'+lesson_4+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
+        "ru": '<div class="card-body"><h5 class="card-title">Фишки онлайн-курсов</h5><p class="card-text">Посоветуем, как следует проходить курсы, чтобы быть успешным</p><a href="'+lesson_4+'?lang=ru&" class="btn btn-success">Перейти!</a></div>',
         "en": '<div class="card-body"><h5 class="card-title">Tips for Online Courses</h5><p class="card-text">How to succeed in taking courses online</p><a href="'+lesson_4+'?lang=en&" class="btn btn-success">Get start!</a></div>',
         "ch": '<div class="card-body"><h5 class="card-title">线上课程的技巧</h5><p class="card-text">如何学好课程才能成功</p><a href="'+lesson_4+'?lang=ch&" class="btn btn-success">去！</a></div>',
         "ar": '<div class="card-body"><h5 class="card-title">مميزات الدورات التدريبية عبر الإنترنت</h5><p class="card-text">وهنا وصف قصير</p><a href="'+lesson_4+'?lang=ar&" class="btn btn-success">يذهب!</a></div>',
