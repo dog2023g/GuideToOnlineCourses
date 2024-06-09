@@ -356,4 +356,10 @@ const language={
         "ch": '极好的！ 现在您可以开始报名在线课程了！',
         "ar": 'الآن يمكنك البدء في التسجيل في الدورات عبر الإنترنت',
     },
+    "h2_1__img_0":{ 
+        "ru": '<img src="img/lesson2_0.jpg" alt="">',
+        "en": '<img src="img/lesson2_0_en.jpg" alt="">',
+        "ch": '<img src="img/lesson2_0_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson2_0_ar.jpg" alt="">',
+    },
 };
