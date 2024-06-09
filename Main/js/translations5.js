@@ -555,9 +555,6 @@ const language={
         "ch": '这样做的好处是：课程期间的工作量和压力较小，并且在初试失败的情况下可以进行额外的尝试。 缺点是不会有关于测试任务的信息。',
         "ar": 'هناك مزايا: تقليل عبء العمل والإجهاد أثناء الجلسة، بالإضافة إلى محاولة إضافية في حالة الفشل في الامتحان التمهيدي. وعلى الجانب السلبي، لن تكون هناك معلومات حول المهام التي ستكون في الاختبار.',
     },
-
-
-
     "test":{ 
         "ru": 'Тест',
         "en": 'Test',
@@ -569,5 +566,29 @@ const language={
         "en": 'Great! Now its time to move on to the next lesson!',
         "ch": '偉大的！ 現在是時候開始下一課了！',
         "ar": 'عظيم! الآن حان الوقت لبدء الدرس التالي!',
+    },
+    "h2_1__img_0":{ 
+        "ru": '<img src="img/lesson5_0.png" alt="">',
+        "en": '<img src="img/lesson5_0_en.jpg" alt="">',
+        "ch": '<img src="img/lesson5_0_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson5_0_ar.jpg" alt="">',
+    },
+    "h2_1__img_1":{ 
+        "ru": '<img src="img/lesson5_1.png" alt="">',
+        "en": '<img src="img/lesson5_1_en.jpg" alt="">',
+        "ch": '<img src="img/lesson5_1_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson5_1_ar.jpg" alt="">',
+    },
+    "h2_2__img_0":{ 
+        "ru": '<img src="img/lesson5_2.png" alt="">',
+        "en": '<img src="img/lesson5_2_lang.png" alt="">',
+        "ch": '<img src="img/lesson5_2_lang.png" alt="">',
+        "ar": '<img src="img/lesson5_2_lang.png" alt="">',
+    },
+    "h2_2__img_1":{ 
+        "ru": '<img src="img/lesson5_3.png" alt="">',
+        "en": '<img src="img/lesson5_3_en.jpg" alt="">',
+        "ch": '<img src="img/lesson5_3_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson5_3_ar.jpg" alt="">',
     },
 };
