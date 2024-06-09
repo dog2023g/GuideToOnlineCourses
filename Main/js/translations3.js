@@ -378,4 +378,28 @@ const language={
         "ch": '伟大的！ 现在到了有趣的部分——参加在线课程！',
         "ar": '!عظيم! الآن يأتي الجزء الممتع – أخذ دورات عبر الإنترنت',
     },
+    "h2_1__img_0":{ 
+        "ru": '<img src="img/lesson3_0.jpg" alt="">',
+        "en": '<img src="img/lesson3_0_en.jpg" alt="">',
+        "ch": '<img src="img/lesson3_0_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson3_0_ar.jpg" alt="">',
+    },
+    "h2_1__img_1":{ 
+        "ru": '<img src="img/lesson3_1.jpg" alt="">',
+        "en": '<img src="img/lesson3_1_en.jpg" alt="">',
+        "ch": '<img src="img/lesson3_1_en.jpg" alt="">',
+        "ar": '<img src="img/lesson3_1_en.jpg" alt="">',
+    },
+    "h2_2__img_0":{ 
+        "ru": '<img src="img/lesson3_2.jpg" alt="">',
+        "en": '<img src="img/lesson3_2_en.jpg" alt="">',
+        "ch": '<img src="img/lesson3_2_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson3_2_ar.jpg" alt="">',
+    },
+    "h2_3__img_0":{ 
+        "ru": '<img src="img/lesson3_3.jpg" alt="">',
+        "en": '<img src="img/lesson3_3_en.jpg" alt="">',
+        "ch": '<img src="img/lesson3_3_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson3_3_ar.jpg" alt="">',
+    },
 };
