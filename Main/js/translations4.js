@@ -351,4 +351,10 @@ const language={
         "ch": '班级！ 现在您知道如何轻松完成在线课程了。 最重要的事情已经到了——测试所获得的知识。',
         "ar": 'عظيم! الآن حان الوقت لبدء الدرس التالي!',
     },
+    "h2_2__img_0":{ 
+        "ru": '<img src="img/lesson4_0.jpg" alt="">',
+        "en": '<img src="img/lesson4_0_en.jpg" alt="">',
+        "ch": '<img src="img/lesson4_0_ch.jpg" alt="">',
+        "ar": '<img src="img/lesson4_0_ar.jpg" alt="">',
+    },
 };
