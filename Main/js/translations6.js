@@ -310,9 +310,6 @@ const language={
         "ch": '<li> 计算公式看起来既复杂又不清楚，不过没关系。最重要的是尽量多得分，这样就不用猜测自己是否得分了。</li>',
         "ar": '<li> </li>',
     },
-
-
-
     "test":{ 
         "ru": 'Тест',
         "en": 'Test',
@@ -324,5 +321,11 @@ const language={
         "en": 'Great! Now its time to move on to the next lesson!',
         "ch": '偉大的！ 現在是時候開始下一課了！',
         "ar": 'عظيم! الآن حان الوقت لبدء الدرس التالي!',
+    },
+    "h2_1__img_0":{ 
+        "ru": '<img src="img/lesson6_0.jpg" alt="">',
+        "en": '<img src="img/lesson6_0_en.jpg" alt="">',
+        "ch": '<img src="img/lesson6_0_en.jpg" alt="">',
+        "ar": '<img src="img/lesson6_0_en.jpg" alt="">',
     },
 };
