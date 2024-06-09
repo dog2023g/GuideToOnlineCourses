@@ -358,4 +358,22 @@ const language={
         "ch": '伟大的！ 现在是时候进入下一阶段了！',
         "ar": 'رائع! الآن حان الوقت للانتقال إلى المرحلة التالية!',
     },
+    "h2_1__img_0":{ 
+        "ru": '<img src="img/lesson1_0.jpg" alt="">',
+        "en": '<img src="img/lesson1_0_lang.jpg" alt="">',
+        "ch": '<img src="img/lesson1_0_lang.jpg" alt="">',
+        "ar": '<img src="img/lesson1_0_lang.jpg" alt="">',
+    },
+    "h2_2__img_0":{ 
+        "ru": '<img src="img/lesson1_1.jpg" alt="">',
+        "en": '<img src="img/lesson1_1_lang.jpg" alt="">',
+        "ch": '<img src="img/lesson1_1_lang.jpg" alt="">',
+        "ar": '<img src="img/lesson1_1_lang.jpg" alt="">',
+    },
+    "h2_2__img_1":{ 
+        "ru": '<img src="img/lesson1_2.jpg" alt="">',
+        "en": '<img src="img/lesson1_2_lang.jpg" alt="">',
+        "ch": '<img src="img/lesson1_2_lang.jpg" alt="">',
+        "ar": '<img src="img/lesson1_2_lang.jpg" alt="">',
+    },
 };
