@@ -270,7 +270,7 @@ const language={
     },
     "h2_2__p_1":{ 
         "ru": 'Где Бу – балл по 100-бальной шкале УрФУ',
-        "en": 'Где Бу – score on the 100-point scale of Ural Federal University',
+        "en": 'Where Бу – score on the 100-point scale of Ural Federal University',
         "ch": '其中 Бу - UrFU 100 分制的得分',
         "ar": 'حيث Бу هي الدرجة على مقياس 100 نقطة لوحدة قياس مؤشر أورفو',
     },
