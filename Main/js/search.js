@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const style = document.createElement('style');
     style.innerHTML = `
         mark {
-            background-color: yellow;
+            background-color: rgb(251, 237, 219);
             padding: 0;
             margin: 0;
             line-height: 1;
