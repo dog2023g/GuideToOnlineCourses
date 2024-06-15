@@ -371,9 +371,67 @@ if(isset($_SESSION['authorized']) && $_SESSION['authorized'] === true) {
 
         $ff=array(); $content=preg_replace('/<[^>]+>/', '^', $translationsContent);$teksta=explode('^',$content);
         for($j=0;$j<count($teksta);$j++){if(strlen(trim($teksta[$j]))>1) $ff[]=(trim($teksta[$j]));};
+        /*
         for($j=0;$j<count($ff);$j++){
             echo('<a href="login.php?mode=3&j='.$j.'" class="mytext"><pre>'.$ff[$j].'</pre></a>');
         };
+        */
+        $columns = array('ru' => array(), 'en' => array(), 'ch' => array(), 'ar' => array());
+
+        foreach ($ff as $text) {
+            
+            // Убираем тексты, которые содержат только "ru:", "en:", "ch:", "ar:" с пробелами и кавычками
+            if (strpos($text, '"ru":') !== false && !preg_match('/[а-яА-ЯёЁ]/u', substr($text, 5))) {
+                continue;
+            }
+            if (strpos($text, '"en":') !== false && !preg_match('/[a-zA-Z]/', substr($text, 5))) {
+                 continue;
+            }
+            if (strpos($text, '"ch":') !== false && !preg_match('/[\x{4e00}-\x{9fff}]/u', substr($text, 5))) {
+                continue;
+            }
+            if (strpos($text, '"ar":') !== false && !preg_match('/[\x{0600}-\x{06FF}]/u', substr($text, 5))) {
+                 continue;
+            }
+
+            if (stripos($text, '"ru":') !== false) {
+                $columns['ru'][] = $text;
+            } elseif (stripos($text, '"en":') !== false) {
+                $columns['en'][] = $text;
+            } elseif (stripos($text, '"ch":') !== false) {
+                $columns['ch'][] = $text;
+            } elseif (stripos($text, '"ar":') !== false) {
+                $columns['ar'][] = $text;
+            } elseif (preg_match('/[а-яА-ЯёЁ]/u', $text)) {
+                $columns['ru'][] = $text;
+            } elseif (preg_match('/[a-zA-Z]/', $text)) {
+                $columns['en'][] = $text;
+            } elseif (preg_match('/[\x{4e00}-\x{9fff}]/u', $text)) {
+                $columns['ch'][] = $text;
+            } elseif (preg_match('/[\x{0600}-\x{06FF}]/u', $text)) {
+                $columns['ar'][] = $text;
+            }
+        }
+
+        $maxRows = max(count($columns['ru']), count($columns['en']), count($columns['ch']), count($columns['ar']));
+
+        echo '<table border="1" cellpadding="5" cellspacing="0" style="width: 100%; table-layout: fixed;">';
+        echo '<tr><th style="width: 25%;">Русский</th><th style="width: 25%;">Английский</th><th style="width: 25%;">Китайский</th><th style="width: 25%;">Арабский</th></tr>';
+
+        for ($i = 0; $i < $maxRows; $i++) {
+            echo '<tr>';
+            foreach (['ru', 'en', 'ch', 'ar'] as $lang) {
+                echo '<td style="word-break: break-word; white-space: pre-wrap; overflow-wrap: break-word; max-width: 0;">';
+                if (isset($columns[$lang][$i])) {
+                    echo '<a href="login.php?mode=3&j=' . array_search($columns[$lang][$i], $ff) . '" class="mytext"><pre style="word-break: break-word; white-space: pre-wrap;">' . $columns[$lang][$i] . '</pre></a>';
+                }
+                echo '</td>';
+            }
+            echo '</tr>';
+        }
+
+        echo '</table>';
+
     };
 
 
